@@ -1,0 +1,5 @@
+Date:12-Nov-2018 
+Reason: Adding to new columns in customer table, for updating parent_id and northgate_id records.
+SQL QUERY: ALTER TABLE `customers` ADD `parent_id` VARCHAR(50) NULL DEFAULT NULL AFTER `dob`, ADD `northgate_id` VARCHAR(50) NULL DEFAULT NULL AFTER`parent_id`;
+
+--------------------------------------------------------------------------------------------------------------------------------
