@@ -1,0 +1,2 @@
+1. sudo cp /esb/libraries/chilkatjava-9.5.0-jdk8-x86_64-linux/libchilkat.so /usr/lib/
+2. Go to routine->Edit Routines Librabires-> Add new -> import chilkat.jar file
