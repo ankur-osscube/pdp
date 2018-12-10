@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_THrzQPxBEeiNI_ZQtdH1NQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_THrzQfxBEeiNI_ZQtdH1NQ" comment="" name="groupBFilesProcessingOrder" prompt="groupBFilesProcessingOrder?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_THrzQvxBEeiNI_ZQtdH1NQ" comment="" name="groupBTier3FilesDirectory" prompt="groupBTier3FilesDirectory?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_THrzQ_xBEeiNI_ZQtdH1NQ" comment="" name="groupBPowerCheckFilesDirectory" prompt="groupBPowerCheckFilesDirectory?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_THrzRPxBEeiNI_ZQtdH1NQ" comment="" name="groupBFilesDirectory" prompt="groupBFilesDirectory?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>
