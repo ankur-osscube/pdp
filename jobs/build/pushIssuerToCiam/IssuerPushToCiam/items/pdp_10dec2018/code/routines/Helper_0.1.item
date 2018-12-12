@@ -1,0 +1,151 @@
+package routines;
+
+
+
+
+
+import routines.system.JSONArray;
+import routines.system.JSONObject;
+
+
+public class Helper {
+
+   
+    public static String[] SplitString(String stringToSpilt, String stringSeprator) {
+        /* given string will be split by the argument delimiter provided. */
+       return   stringToSpilt.split(stringSeprator);       
+    
+
+    }    
+    
+    public static JSONArray stringtoJSONArray(String stringToSpilt, String stringSeprator){    	
+    	JSONArray jsonArray = new JSONArray();  
+    	if(!checkIsBlankOrNull(stringToSpilt)){
+    		if(isSubStringExist(stringSeprator, stringToSpilt)){
+    			String[] stringArray=stringToSpilt.split(stringSeprator); 
+    			//int [] test=new int[stringArray.length];
+    			for (int i=0; i<stringArray.length; i++)
+    	        {
+    				//test[i]=Integer.parseInt(stringArray[i]);    				
+    				//jsonArray.put(Integer.parseInt(stringArray[i]));
+    				jsonArray.put(Helper.isInteger(stringArray[i])?Integer.parseInt(stringArray[i]):stringArray[i]);
+        	        
+    	        }
+    		}else{
+    			jsonArray.put(Helper.isInteger(stringToSpilt)?Integer.parseInt(stringToSpilt):stringToSpilt);
+    	        
+    		}        
+    	}
+    	return jsonArray;
+    }
+    
+    
+    public static boolean isInteger(String s) {
+        return Helper.isInteger(s,10);
+    }
+
+    public static boolean isInteger(String s, int radix) {
+        if(s.isEmpty()) return false;
+        for(int i = 0; i < s.length(); i++) {
+            if(i == 0 && s.charAt(i) == '-') {
+                if(s.length() == 1) return false;
+                else continue;
+            }
+            if(Character.digit(s.charAt(i),radix) < 0) return false;
+        }
+        return true;
+    }
+    
+    public static Boolean checkIsBlank(String string) {
+    	return (StringHandling.LEN(StringHandling.TRIM(string))==0)?true:false;
+    }
+    
+    public static Boolean checkIsBlankOrNull(String string) {
+    	return (string==null|| StringHandling.LEN(StringHandling.TRIM(string))==0)?true:false;
+    }
+    
+    public static Boolean checkIsNotValidLength(String string, Integer minlength, Integer maxlength) {
+    	return (string==null || (StringHandling.LEN(StringHandling.TRIM(string))< minlength)|| (StringHandling.LEN(StringHandling.TRIM(string)) > maxlength))?true:false;
+    }
+    
+    
+    public static String checkRequiredParamExist(String string,String paramName) {
+    	
+    	if(Helper.checkIsBlankOrNull(string)){
+   			return paramName+" is required; ";
+   		}    	
+    	return "";
+    }
+    
+    public static String checkRequiredParamExistAndHasValidLength(String string,String paramName, Integer minlength, Integer maxlength) {
+    	
+    	if(Helper.checkIsBlankOrNull(string)){
+   			return paramName+" is required; ";
+   		}
+    	if(Helper.checkIsNotValidLength(string,minlength,maxlength)){
+   			return paramName+" should contain min "+minlength +" character and max "+maxlength +" characters; ";
+   		}
+    	return "";
+    }
+    
+    public static String checkIfNotBlankOrNullAndHasValidLength(String valueToCheck, String paramName, Integer minlength, Integer maxlength) {
+    	if(!Helper.checkIsBlankOrNull(valueToCheck)){    	
+       		if(Helper.checkIsNotValidLength(valueToCheck,minlength,maxlength)){
+       			return paramName+" should contain min "+minlength +" character and max "+maxlength +" characters; ";
+       		}
+       	}
+    	return "";
+    }
+    
+    public static String checkIfNotBlankOrNullAndHasValidEmail(String valueToCheck, String paramName) {
+    	if(!Helper.checkIsBlankOrNull(valueToCheck)){    	
+       		if(!Validation.isValidEmailAddress(valueToCheck)){
+       			return paramName+" not a valid email address; ";
+       		}
+       	}
+    	return "";
+    }
+    
+    public static String checkIfNotBlankOrNullAndHasValidNumber(String valueToCheck, String paramName) {
+    	if(!Helper.checkIsBlankOrNull(valueToCheck)){    	
+       		if(!valueToCheck.matches("^[0-9]*$")){
+       			return paramName+" not a valid interger; ";
+       		}
+       	}
+    	return "";
+    }
+    
+    
+    public static Boolean checkIsBlankOrNullOrNan(String string) {
+    	return (string==null|| StringHandling.LEN(StringHandling.TRIM(string))==0)||!string.matches("^[0-9]*$")?true:false;
+    }   
+    
+    
+   
+    
+    
+    public static JSONObject  getIssuerObject(String source, String legacy_id, String issuer_name, String issuer_type, String routing_number, String 	account_number, JSONArray phoneArray, JSONArray addressArray){
+			 JSONObject issuerObject = new JSONObject();    	
+			 issuerObject.put("source", source);
+			 issuerObject.put("legacy_id", legacy_id);
+			 issuerObject.put("issuer_name", issuer_name);
+			 issuerObject.put("issuer_type", issuer_type);
+			 issuerObject.put("routing_number", routing_number);
+			 issuerObject.put("account_number", account_number);
+			 issuerObject.put("phoneList", phoneArray);
+			 issuerObject.put("addreessList", addressArray);  	 
+			 return issuerObject ;
+  	} 
+
+
+    public static Boolean  isStringMatch(String StringToBeMatch, String StringToMatchWith){
+    	return StringToMatchWith.matches(StringToBeMatch);
+	} 
+
+    public static Boolean  isSubStringExist(String subString, String fullString){
+    	return (StringHandling.INDEX(StringHandling.DOWNCASE(fullString) ,StringHandling.DOWNCASE(subString))>=0)?true:false;
+	}
+    
+    
+    
+}

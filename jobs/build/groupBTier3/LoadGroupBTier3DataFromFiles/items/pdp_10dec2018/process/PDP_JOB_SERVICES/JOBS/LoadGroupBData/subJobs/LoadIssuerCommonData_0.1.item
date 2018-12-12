@@ -238,30 +238,30 @@
       <column comment="" key="false" length="-1" name="issuer_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="source" expression="context.source" type="id_String"/>
       </varTables>
-      <outputTables sizeState="INTERMEDIATE" name="legacyIdMatched" expressionFilter="(!Helper.checkIsBlankOrNull(row1.IssuerName) &amp;&amp; !Helper.checkIsBlankOrNull(row1.IssuerType))" activateExpressionFilter="true" activateCondensedTool="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="legacyIdMatched" minimized="true" expressionFilter="(!Helper.checkIsBlankOrNull(row1.IssuerName) &amp;&amp; !Helper.checkIsBlankOrNull(row1.IssuerType))" activateExpressionFilter="true" activateCondensedTool="true" columnNameFilter="">
         <mapperTableEntries name="id" expression="row2.id " type="id_Integer"/>
         <mapperTableEntries name="source" expression="Var.source " type="id_String"/>
         <mapperTableEntries name="legacy_id" expression="row1.IssuerRefNo " type="id_String"/>
         <mapperTableEntries name="issuer_name" expression="row1.IssuerName " type="id_String" nullable="true"/>
         <mapperTableEntries name="issuer_type" expression="row1.IssuerType " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="legacyIdUnmatched" expressionFilter="(!Helper.checkIsBlankOrNull(row1.IssuerName) &amp;&amp; !Helper.checkIsBlankOrNull(row1.IssuerType))" activateExpressionFilter="true" activateCondensedTool="true" rejectInnerJoin="true">
+      <outputTables sizeState="INTERMEDIATE" name="legacyIdUnmatched" minimized="true" expressionFilter="(!Helper.checkIsBlankOrNull(row1.IssuerName) &amp;&amp; !Helper.checkIsBlankOrNull(row1.IssuerType))" activateExpressionFilter="true" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="source" expression="Var.source " type="id_String"/>
         <mapperTableEntries name="legacy_id" expression="row1.IssuerRefNo " type="id_String"/>
         <mapperTableEntries name="issuer_name" expression="row1.IssuerName " type="id_String" nullable="true"/>
         <mapperTableEntries name="issuer_type" expression="row1.IssuerType " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="legacyIdMatchedWithInvalidIssuer" minimized="true" expressionFilter="(Helper.checkIsBlankOrNull(row1.IssuerName)||Helper.checkIsBlankOrNull(row1.IssuerType))" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="legacyIdMatchedWithInvalidIssuer" minimized="true" expressionFilter="(Helper.checkIsBlankOrNull(row1.IssuerName)||Helper.checkIsBlankOrNull(row1.IssuerType))" activateExpressionFilter="true" activateColumnNameFilter="true" columnNameFilter="">
         <mapperTableEntries name="source" expression="Var.source " type="id_String"/>
         <mapperTableEntries name="legacy_id" expression="row1.IssuerRefNo " type="id_String"/>
         <mapperTableEntries name="issuer_name" expression="row1.IssuerName " type="id_String" nullable="true"/>
         <mapperTableEntries name="issuer_type" expression="row1.IssuerType " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="legacyIdUnmatchedWithInvalidIssuer" minimized="true" expressionFilter="(Helper.checkIsBlankOrNull(row1.IssuerName)||Helper.checkIsBlankOrNull(row1.IssuerType))" activateExpressionFilter="true" activateCondensedTool="true" columnNameFilter="" rejectInnerJoin="true">
+      <outputTables sizeState="INTERMEDIATE" name="legacyIdUnmatchedWithInvalidIssuer" minimized="true" expressionFilter="(Helper.checkIsBlankOrNull(row1.IssuerName)||Helper.checkIsBlankOrNull(row1.IssuerType))" activateExpressionFilter="true" activateCondensedTool="true" activateColumnNameFilter="true" columnNameFilter="" rejectInnerJoin="true">
         <mapperTableEntries name="source" expression="Var.source " type="id_String"/>
         <mapperTableEntries name="legacy_id" expression="row1.IssuerRefNo " type="id_String"/>
         <mapperTableEntries name="issuer_name" expression="row1.IssuerName " type="id_String" nullable="true"/>
@@ -274,7 +274,7 @@
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="id" type="id_Integer"/>
-        <mapperTableEntries name="source" type="id_String"/>
+        <mapperTableEntries name="source" expression="context.source" type="id_String"/>
         <mapperTableEntries name="legacy_id" expression="row1.IssuerRefNo " type="id_String" operator="="/>
       </inputTables>
     </nodeData>

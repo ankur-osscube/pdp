@@ -172,12 +172,6 @@ protected static void logIgnoredError(String message, Throwable cause) {
 				
 			}
 			
-			if(apiLogDirectory != null){
-				
-					this.setProperty("apiLogDirectory", apiLogDirectory.toString());
-				
-			}
-			
 			if(mysql_port != null){
 				
 					this.setProperty("mysql_port", mysql_port.toString());
@@ -211,6 +205,42 @@ protected static void logIgnoredError(String message, Throwable cause) {
 			if(parentId != null){
 				
 					this.setProperty("parentId", parentId.toString());
+				
+			}
+			
+			if(talendBaseUrl != null){
+				
+					this.setProperty("talendBaseUrl", talendBaseUrl.toString());
+				
+			}
+			
+			if(jobName != null){
+				
+					this.setProperty("jobName", jobName.toString());
+				
+			}
+			
+			if(reason != null){
+				
+					this.setProperty("reason", reason.toString());
+				
+			}
+			
+			if(dataJson != null){
+				
+					this.setProperty("dataJson", dataJson.toString());
+				
+			}
+			
+			if(dataSource != null){
+				
+					this.setProperty("dataSource", dataSource.toString());
+				
+			}
+			
+			if(dataSourceType != null){
+				
+					this.setProperty("dataSourceType", dataSourceType.toString());
 				
 			}
 			
@@ -248,10 +278,6 @@ public String enableLog;
 public String getEnableLog(){
 	return this.enableLog;
 }
-public String apiLogDirectory;
-public String getApiLogDirectory(){
-	return this.apiLogDirectory;
-}
 public String mysql_port;
 public String getMysql_port(){
 	return this.mysql_port;
@@ -275,6 +301,30 @@ public String getMysql_database(){
 public Integer parentId;
 public Integer getParentId(){
 	return this.parentId;
+}
+public String talendBaseUrl;
+public String getTalendBaseUrl(){
+	return this.talendBaseUrl;
+}
+public String jobName;
+public String getJobName(){
+	return this.jobName;
+}
+public String reason;
+public String getReason(){
+	return this.reason;
+}
+public String dataJson;
+public String getDataJson(){
+	return this.dataJson;
+}
+public String dataSource;
+public String getDataSource(){
+	return this.dataSource;
+}
+public String dataSourceType;
+public String getDataSourceType(){
+	return this.dataSourceType;
 }
 	}
 	private ContextProperties context = new ContextProperties();
@@ -1246,11 +1296,6 @@ if(row_Implicit_Context_Regex != null) {
            context.enableLog=value_Implicit_Context_Context;
         }
 
-        if(key_Implicit_Context_Context!=null && "apiLogDirectory".equals(key_Implicit_Context_Context))
-        {
-           context.apiLogDirectory=value_Implicit_Context_Context;
-        }
-
         if(key_Implicit_Context_Context!=null && "mysql_port".equals(key_Implicit_Context_Context))
         {
            context.mysql_port=value_Implicit_Context_Context;
@@ -1281,6 +1326,36 @@ if(row_Implicit_Context_Regex != null) {
 
                 context.parentId=Integer.parseInt(value_Implicit_Context_Context);
 
+        }
+
+        if(key_Implicit_Context_Context!=null && "talendBaseUrl".equals(key_Implicit_Context_Context))
+        {
+           context.talendBaseUrl=value_Implicit_Context_Context;
+        }
+
+        if(key_Implicit_Context_Context!=null && "jobName".equals(key_Implicit_Context_Context))
+        {
+           context.jobName=value_Implicit_Context_Context;
+        }
+
+        if(key_Implicit_Context_Context!=null && "reason".equals(key_Implicit_Context_Context))
+        {
+           context.reason=value_Implicit_Context_Context;
+        }
+
+        if(key_Implicit_Context_Context!=null && "dataJson".equals(key_Implicit_Context_Context))
+        {
+           context.dataJson=value_Implicit_Context_Context;
+        }
+
+        if(key_Implicit_Context_Context!=null && "dataSource".equals(key_Implicit_Context_Context))
+        {
+           context.dataSource=value_Implicit_Context_Context;
+        }
+
+        if(key_Implicit_Context_Context!=null && "dataSourceType".equals(key_Implicit_Context_Context))
+        {
+           context.dataSourceType=value_Implicit_Context_Context;
         }
 
 
@@ -10495,15 +10570,6 @@ if(IssuerPhone != null) {
 		
 		parentContextMap_tRunJob_8.put("source", obj_tRunJob_8);
 	
-		obj_tRunJob_8 = "issuer";
-		if(obj_tRunJob_8!=null) {
-			paraList_tRunJob_8.add("--context_param type=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_8));
-		} else {
-			paraList_tRunJob_8.add("--context_param type=" + NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
-		}
-		
-		parentContextMap_tRunJob_8.put("type", obj_tRunJob_8);
-	
 		obj_tRunJob_8 = (Integer) globalMap.get("parentId");
 		if(obj_tRunJob_8!=null) {
 			paraList_tRunJob_8.add("--context_param parentId=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_8));
@@ -10685,15 +10751,6 @@ if(IssuerAddress != null) {
 		}
 		
 		parentContextMap_tRunJob_9.put("source", obj_tRunJob_9);
-	
-		obj_tRunJob_9 = "issuer";
-		if(obj_tRunJob_9!=null) {
-			paraList_tRunJob_9.add("--context_param type=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_9));
-		} else {
-			paraList_tRunJob_9.add("--context_param type=" + NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
-		}
-		
-		parentContextMap_tRunJob_9.put("type", obj_tRunJob_9);
 	
 		obj_tRunJob_9 = (Integer) globalMap.get("parentId");
 		if(obj_tRunJob_9!=null) {
@@ -11678,9 +11735,6 @@ end_Hash.put("tRunJob_9", System.currentTimeMillis());
 				    context.setContextType("enableLog", "id_String");
 				
                 context.enableLog=(String) context.getProperty("enableLog");
-				    context.setContextType("apiLogDirectory", "id_String");
-				
-                context.apiLogDirectory=(String) context.getProperty("apiLogDirectory");
 				    context.setContextType("mysql_port", "id_String");
 				
                 context.mysql_port=(String) context.getProperty("mysql_port");
@@ -11703,6 +11757,24 @@ end_Hash.put("tRunJob_9", System.currentTimeMillis());
              }catch(NumberFormatException e){
                  context.parentId=null;
               }
+				    context.setContextType("talendBaseUrl", "id_String");
+				
+                context.talendBaseUrl=(String) context.getProperty("talendBaseUrl");
+				    context.setContextType("jobName", "id_String");
+				
+                context.jobName=(String) context.getProperty("jobName");
+				    context.setContextType("reason", "id_String");
+				
+                context.reason=(String) context.getProperty("reason");
+				    context.setContextType("dataJson", "id_String");
+				
+                context.dataJson=(String) context.getProperty("dataJson");
+				    context.setContextType("dataSource", "id_String");
+				
+                context.dataSource=(String) context.getProperty("dataSource");
+				    context.setContextType("dataSourceType", "id_String");
+				
+                context.dataSourceType=(String) context.getProperty("dataSourceType");
         } catch (java.io.IOException ie) {
             System.err.println("Could not load context "+contextStr);
             ie.printStackTrace();
@@ -11726,8 +11798,6 @@ end_Hash.put("tRunJob_9", System.currentTimeMillis());
                 context.logDirectory = (String) parentContextMap.get("logDirectory");
             }if (parentContextMap.containsKey("enableLog")) {
                 context.enableLog = (String) parentContextMap.get("enableLog");
-            }if (parentContextMap.containsKey("apiLogDirectory")) {
-                context.apiLogDirectory = (String) parentContextMap.get("apiLogDirectory");
             }if (parentContextMap.containsKey("mysql_port")) {
                 context.mysql_port = (String) parentContextMap.get("mysql_port");
             }if (parentContextMap.containsKey("mysql_host")) {
@@ -11740,6 +11810,18 @@ end_Hash.put("tRunJob_9", System.currentTimeMillis());
                 context.mysql_database = (String) parentContextMap.get("mysql_database");
             }if (parentContextMap.containsKey("parentId")) {
                 context.parentId = (Integer) parentContextMap.get("parentId");
+            }if (parentContextMap.containsKey("talendBaseUrl")) {
+                context.talendBaseUrl = (String) parentContextMap.get("talendBaseUrl");
+            }if (parentContextMap.containsKey("jobName")) {
+                context.jobName = (String) parentContextMap.get("jobName");
+            }if (parentContextMap.containsKey("reason")) {
+                context.reason = (String) parentContextMap.get("reason");
+            }if (parentContextMap.containsKey("dataJson")) {
+                context.dataJson = (String) parentContextMap.get("dataJson");
+            }if (parentContextMap.containsKey("dataSource")) {
+                context.dataSource = (String) parentContextMap.get("dataSource");
+            }if (parentContextMap.containsKey("dataSourceType")) {
+                context.dataSourceType = (String) parentContextMap.get("dataSourceType");
             }
         }
 
@@ -12005,6 +12087,6 @@ if (execStat) {
     ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- *     273738 characters generated by Talend Open Studio for ESB 
- *     on the 10 December, 2018 8:45:21 PM IST
+ *     276245 characters generated by Talend Open Studio for ESB 
+ *     on the 12 December, 2018 3:50:50 PM IST
  ************************************************************************************************/

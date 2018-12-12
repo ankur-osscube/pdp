@@ -275,7 +275,7 @@
       <column comment="" key="false" length="50" name="zipcode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="source" expression="context.source" type="id_String"/>
         <mapperTableEntries name="type" expression="context.type" type="id_String"/>

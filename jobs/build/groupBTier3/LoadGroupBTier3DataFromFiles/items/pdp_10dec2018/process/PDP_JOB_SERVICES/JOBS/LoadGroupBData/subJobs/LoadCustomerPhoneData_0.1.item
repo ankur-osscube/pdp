@@ -270,7 +270,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="source" expression="context.source" type="id_String"/>
         <mapperTableEntries name="type" expression="context.type" type="id_String"/>
@@ -310,7 +310,7 @@
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" activateExpressionFilter="true" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="id" type="id_Integer"/>
-        <mapperTableEntries name="source" type="id_String"/>
+        <mapperTableEntries name="source" expression="context.source" type="id_String"/>
         <mapperTableEntries name="legacy_id" expression="row1.CustomerRefNo " type="id_String" operator="="/>
       </inputTables>
     </nodeData>

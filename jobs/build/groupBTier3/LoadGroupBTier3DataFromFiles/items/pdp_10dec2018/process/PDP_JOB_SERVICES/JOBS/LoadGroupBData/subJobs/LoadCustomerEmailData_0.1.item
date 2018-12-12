@@ -127,7 +127,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.filename"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/esb/data/group_b/powercheck/cust_email_extract_pch_19700101000000_20181005142444.txt&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
@@ -195,7 +195,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="Enriching"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="emails" name="insertData">
+    <metadata connector="FLOW" label="emails" name="matchedLegacyIdWithValidEmail">
       <column comment="" key="false" length="50" name="source" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -207,7 +207,7 @@
       </column>
       <additionalProperties key="Comment" value=""/>
     </metadata>
-    <metadata connector="FLOW" name="CreateCustomerAndInsertData">
+    <metadata connector="FLOW" name="UnmatchedLegacyIdWithValidEmail">
       <column comment="" key="false" length="50" name="source" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -218,7 +218,7 @@
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
-    <metadata connector="FLOW" name="legacyIdMatchedWithInvalidEmail">
+    <metadata connector="FLOW" name="matchedLegacyIdWithInvalidEmail">
       <column comment="" key="false" length="50" name="source" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -229,7 +229,7 @@
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
-    <metadata connector="FLOW" name="createLogForUnmatchedLegacyIdAndInvalidEmail">
+    <metadata connector="FLOW" name="UnmatchedLegacyIdAndInvalidEmail">
       <column comment="" key="false" length="50" name="source" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -241,26 +241,26 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="source" expression="context.source" type="id_String"/>
       </varTables>
-      <outputTables sizeState="INTERMEDIATE" name="insertData" minimized="true" expressionFilter="Validation.isValidEmailAddress(row1.Email)" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="matchedLegacyIdWithValidEmail" expressionFilter="Validation.isValidEmailAddress(row1.Email)" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="source" expression="Var.source " type="id_String"/>
         <mapperTableEntries name="legacy_id" expression="row1.CustomerRefNo " type="id_String"/>
         <mapperTableEntries name="email" expression="row1.Email " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="CreateCustomerAndInsertData" expressionFilter="Validation.isValidEmailAddress(row1.Email)" activateExpressionFilter="true" activateCondensedTool="true" rejectInnerJoin="true">
+      <outputTables sizeState="INTERMEDIATE" name="UnmatchedLegacyIdWithValidEmail" expressionFilter="Validation.isValidEmailAddress(row1.Email)" activateExpressionFilter="true" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="source" expression="Var.source " type="id_String"/>
         <mapperTableEntries name="legacy_id" expression="row1.CustomerRefNo " type="id_String"/>
         <mapperTableEntries name="email" expression="row1.Email " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="legacyIdMatchedWithInvalidEmail" expressionFilter="!Validation.isValidEmailAddress(row1.Email)" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="matchedLegacyIdWithInvalidEmail" expressionFilter="!Validation.isValidEmailAddress(row1.Email)" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="source" expression="Var.source " type="id_String"/>
         <mapperTableEntries name="legacy_id" expression="row1.CustomerRefNo " type="id_String"/>
         <mapperTableEntries name="email" expression="row1.Email " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="createLogForUnmatchedLegacyIdAndInvalidEmail" expressionFilter="!Validation.isValidEmailAddress(row1.Email)" columnNameFilter="!Validation.isValidEmailAddress(row1.Email)" rejectInnerJoin="true">
+      <outputTables sizeState="INTERMEDIATE" name="UnmatchedLegacyIdAndInvalidEmail" expressionFilter="!Validation.isValidEmailAddress(row1.Email)" activateExpressionFilter="true" activateCondensedTool="true" columnNameFilter="!Validation.isValidEmailAddress(row1.Email)" rejectInnerJoin="true">
         <mapperTableEntries name="source" expression="Var.source " type="id_String"/>
         <mapperTableEntries name="legacy_id" expression="row1.CustomerRefNo " type="id_String"/>
         <mapperTableEntries name="email" expression="row1.Email " type="id_String" nullable="true"/>
@@ -271,7 +271,7 @@
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" activateExpressionFilter="true" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="id" type="id_Integer"/>
-        <mapperTableEntries name="source" type="id_String"/>
+        <mapperTableEntries name="source" expression="context.source" type="id_String"/>
         <mapperTableEntries name="legacy_id" expression="row1.CustomerRefNo " type="id_String" operator="="/>
       </inputTables>
     </nodeData>
@@ -355,20 +355,20 @@
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="insertNewEmail" activateExpressionFilter="true" activateCondensedTool="true" activateColumnNameFilter="true" columnNameFilter="" rejectInnerJoin="true">
-        <mapperTableEntries name="source" expression="insertData.source " type="id_String"/>
-        <mapperTableEntries name="legacy_id" expression="insertData.legacy_id " type="id_String"/>
-        <mapperTableEntries name="email" expression="insertData.email " type="id_String" nullable="true"/>
+        <mapperTableEntries name="source" expression="matchedLegacyIdWithValidEmail.source " type="id_String"/>
+        <mapperTableEntries name="legacy_id" expression="matchedLegacyIdWithValidEmail.legacy_id " type="id_String"/>
+        <mapperTableEntries name="email" expression="matchedLegacyIdWithValidEmail.email " type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="insertData" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="matchedLegacyIdWithValidEmail" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="source" type="id_String"/>
         <mapperTableEntries name="legacy_id" type="id_String"/>
         <mapperTableEntries name="email" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row3" activateExpressionFilter="true" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="id" type="id_Integer"/>
-        <mapperTableEntries name="source" expression="insertData.source " type="id_String" operator="="/>
-        <mapperTableEntries name="legacy_id" expression="insertData.legacy_id " type="id_String" operator="="/>
-        <mapperTableEntries name="email" expression="insertData.email " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="source" expression="matchedLegacyIdWithValidEmail.source " type="id_String" operator="="/>
+        <mapperTableEntries name="legacy_id" expression="matchedLegacyIdWithValidEmail.legacy_id " type="id_String" operator="="/>
+        <mapperTableEntries name="email" expression="matchedLegacyIdWithValidEmail.email " type="id_String" nullable="true" operator="="/>
       </inputTables>
     </nodeData>
   </node>
@@ -546,15 +546,15 @@
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="createCustomer">
-        <mapperTableEntries name="source" expression="CreateCustomerAndInsertData.source " type="id_String"/>
-        <mapperTableEntries name="legacy_id" expression="CreateCustomerAndInsertData.legacy_id " type="id_String"/>
+        <mapperTableEntries name="source" expression="UnmatchedLegacyIdWithValidEmail.source " type="id_String"/>
+        <mapperTableEntries name="legacy_id" expression="UnmatchedLegacyIdWithValidEmail.legacy_id " type="id_String"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="insertEmailData" activateExpressionFilter="true">
-        <mapperTableEntries name="source" expression="CreateCustomerAndInsertData.source " type="id_String"/>
-        <mapperTableEntries name="legacy_id" expression="CreateCustomerAndInsertData.legacy_id " type="id_String"/>
-        <mapperTableEntries name="email" expression="CreateCustomerAndInsertData.email " type="id_String" nullable="true"/>
+        <mapperTableEntries name="source" expression="UnmatchedLegacyIdWithValidEmail.source " type="id_String"/>
+        <mapperTableEntries name="legacy_id" expression="UnmatchedLegacyIdWithValidEmail.legacy_id " type="id_String"/>
+        <mapperTableEntries name="email" expression="UnmatchedLegacyIdWithValidEmail.email " type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="CreateCustomerAndInsertData" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="UnmatchedLegacyIdWithValidEmail" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="source" type="id_String"/>
         <mapperTableEntries name="legacy_id" type="id_String"/>
         <mapperTableEntries name="email" type="id_String" nullable="true"/>
@@ -1279,31 +1279,31 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="insertData" lineStyle="0" metaname="insertData" offsetLabelX="37" offsetLabelY="4" outputId="1" source="tMap_1" target="tMap_2">
+  <connection connectorName="FLOW" label="matchedLegacyIdWithValidEmail" lineStyle="0" metaname="matchedLegacyIdWithValidEmail" offsetLabelX="50" offsetLabelY="0" outputId="1" source="tMap_1" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="insertData" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="matchedLegacyIdWithValidEmail" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="CreateCustomerAndInsertData" lineStyle="0" metaname="CreateCustomerAndInsertData" offsetLabelX="50" offsetLabelY="12" outputId="2" source="tMap_1" target="tMap_3">
+  <connection connectorName="FLOW" label="UnmatchedLegacyIdWithValidEmail" lineStyle="0" metaname="UnmatchedLegacyIdWithValidEmail" offsetLabelX="50" offsetLabelY="12" outputId="2" source="tMap_1" target="tMap_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="CreateCustomerAndInsertData" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="UnmatchedLegacyIdWithValidEmail" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="legacyIdMatchedWithInvalidEmail" lineStyle="0" metaname="legacyIdMatchedWithInvalidEmail" offsetLabelX="-50" offsetLabelY="-42" outputId="3" source="tMap_1" target="tJavaRow_2">
+  <connection connectorName="FLOW" label="matchedLegacyIdWithInvalidEmail" lineStyle="0" metaname="matchedLegacyIdWithInvalidEmail" offsetLabelX="-50" offsetLabelY="-42" outputId="3" source="tMap_1" target="tJavaRow_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="created_at"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="legacyIdMatchedWithInvalidEmail" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="matchedLegacyIdWithInvalidEmail" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="createLogForUnmatchedLegacyIdAndInvalidEmail" lineStyle="0" metaname="createLogForUnmatchedLegacyIdAndInvalidEmail" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tMap_1" target="tJavaRow_4">
+  <connection connectorName="FLOW" label="UnmatchedLegacyIdAndInvalidEmail" lineStyle="0" metaname="UnmatchedLegacyIdAndInvalidEmail" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tMap_1" target="tJavaRow_4">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="created_at"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="createLogForUnmatchedLegacyIdAndInvalidEmail" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="UnmatchedLegacyIdAndInvalidEmail" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>

@@ -20,7 +20,7 @@
   <parameters>
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms512M&quot;,&quot;-Xmx2048M&quot;]}" show="false"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="292" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="288" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="224" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -282,120 +282,6 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="32">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
-    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
-    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="LoadCustomerEmailData"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_VZl_gNgmEeizeK4TWOfK7A"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="0.1"/>
-    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
-    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
-    <elementParameter field="TABLE" name="CONTEXTPARAMS">
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="filename"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(String) customerEmail.filename"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="source"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;tier3&quot;"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="type"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;customer&quot;"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="parentId"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Integer) globalMap.get(&quot;parentId&quot;)"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="Customer EmailData SubJob"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRunJob_2"/>
-  </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
-    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
-    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="LoadCustomerCommonData"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_S-JQwNgmEeizeK4TWOfK7A"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
-    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
-    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
-    <elementParameter field="TABLE" name="CONTEXTPARAMS">
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="filename"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(String) customerCommon.filename"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="source"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;tier3&quot;"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="parentId"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Integer) globalMap.get(&quot;parentId&quot;)"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="Customer CommonData SubJob"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRunJob_1"/>
-  </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="0">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
-    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
-    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="LoadCustomerPhoneData"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_bMNeYNgmEeizeK4TWOfK7A"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
-    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
-    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
-    <elementParameter field="TABLE" name="CONTEXTPARAMS">
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="filename"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(String) customerPhone.filename"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="source"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;tier3&quot;"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="type"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;customer&quot;"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="parentId"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Integer) globalMap.get(&quot;parentId&quot;)"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="Customer PhoneData SubJob"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRunJob_3"/>
-  </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="96">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_4" show="false"/>
-    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
-    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="LoadCustomerAddressData"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_snwIINtbEeijf8pzc7B5fg"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
-    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
-    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
-    <elementParameter field="TABLE" name="CONTEXTPARAMS">
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="filename"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(String) customerAddress.filename"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="source"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;tier3&quot;"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="type"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;customer&quot;"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="parentId"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Integer) globalMap.get(&quot;parentId&quot;)"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="Customer AddressData SubJob"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRunJob_4"/>
-  </node>
   <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_6" show="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
@@ -467,8 +353,6 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="(String) IssuerPhone.filename"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="source"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;tier3&quot;"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="type"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;issuer&quot;"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="parentId"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Integer) globalMap.get(&quot;parentId&quot;)"/>
     </elementParameter>
@@ -496,8 +380,6 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="(String) IssuerAddress.filename"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="source"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;tier3&quot;"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="type"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;issuer&quot;"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="parentId"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Integer) globalMap.get(&quot;parentId&quot;)"/>
     </elementParameter>
@@ -507,6 +389,120 @@
     <elementParameter field="TEXT" name="LABEL" value="Issuer AddressData SubJob"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_9"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="LoadCustomerCommonData"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_S-JQwNgmEeizeK4TWOfK7A"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="filename"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(String) customerCommon.filename"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="source"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;tier3&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parentId"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Integer) globalMap.get(&quot;parentId&quot;)"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Customer CommonData SubJob"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="LoadCustomerEmailData"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_VZl_gNgmEeizeK4TWOfK7A"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="0.1"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="filename"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(String) customerEmail.filename"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="source"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;tier3&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="type"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;customer&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parentId"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Integer) globalMap.get(&quot;parentId&quot;)"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Customer EmailData SubJob"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="LoadCustomerPhoneData"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_bMNeYNgmEeizeK4TWOfK7A"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="filename"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(String) customerPhone.filename"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="source"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;tier3&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="type"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;customer&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parentId"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Integer) globalMap.get(&quot;parentId&quot;)"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Customer PhoneData SubJob"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_3"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_4" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="LoadCustomerAddressData"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_snwIINtbEeijf8pzc7B5fg"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="filename"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(String) customerAddress.filename"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="source"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;tier3&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="type"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;customer&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parentId"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Integer) globalMap.get(&quot;parentId&quot;)"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Customer AddressData SubJob"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_4"/>
   </node>
   <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_5" show="false"/>
@@ -978,33 +974,33 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="customerEmail" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="customerIds" lineStyle="0" metaname="customerIds" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_1" target="tRunJob_5">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="customerIds" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="customerPhone" lineStyle="0" metaname="customerPhone" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tMap_1" target="tRunJob_3">
+  <connection connectorName="FLOW" label="customerPhone" lineStyle="0" metaname="customerPhone" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_1" target="tRunJob_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="customerPhone" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="customerAddress" lineStyle="0" metaname="customerAddress" offsetLabelX="0" offsetLabelY="0" outputId="5" source="tMap_1" target="tRunJob_4">
+  <connection connectorName="FLOW" label="customerAddress" lineStyle="0" metaname="customerAddress" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tMap_1" target="tRunJob_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="customerAddress" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="issuerCommon" lineStyle="0" metaname="issuerCommon" offsetLabelX="0" offsetLabelY="0" outputId="6" source="tMap_1" target="tRunJob_6">
+  <connection connectorName="FLOW" label="issuerCommon" lineStyle="0" metaname="issuerCommon" offsetLabelX="0" offsetLabelY="0" outputId="5" source="tMap_1" target="tRunJob_6">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="issuerCommon" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="issuerAccount" lineStyle="0" metaname="issuerAccount" offsetLabelX="0" offsetLabelY="0" outputId="7" source="tMap_1" target="tRunJob_7">
+  <connection connectorName="FLOW" label="issuerAccount" lineStyle="0" metaname="issuerAccount" offsetLabelX="0" offsetLabelY="0" outputId="6" source="tMap_1" target="tRunJob_7">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="issuerAccount" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="IssuerPhone" lineStyle="0" metaname="IssuerPhone" offsetLabelX="0" offsetLabelY="0" outputId="8" source="tMap_1" target="tRunJob_8">
+  <connection connectorName="FLOW" label="IssuerPhone" lineStyle="0" metaname="IssuerPhone" offsetLabelX="0" offsetLabelY="0" outputId="7" source="tMap_1" target="tRunJob_8">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="IssuerPhone" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="IssuerAddress" lineStyle="0" metaname="IssuerAddress" offsetLabelX="0" offsetLabelY="0" outputId="9" source="tMap_1" target="tRunJob_9">
+  <connection connectorName="FLOW" label="IssuerAddress" lineStyle="0" metaname="IssuerAddress" offsetLabelX="0" offsetLabelY="0" outputId="8" source="tMap_1" target="tRunJob_9">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="IssuerAddress" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="customerIds" lineStyle="0" metaname="customerIds" offsetLabelX="0" offsetLabelY="0" outputId="9" source="tMap_1" target="tRunJob_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="customerIds" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
@@ -1043,7 +1039,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
@@ -1056,7 +1052,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
