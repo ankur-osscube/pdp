@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_TICYkPxBEeiNI_ZQtdH1NQ" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_TICYkfxBEeiNI_ZQtdH1NQ" comment="" name="successStatus" prompt="successStatus?" promptNeeded="false" type="id_Boolean" value=""/>
-  <contextParameter xmi:id="_TICYkvxBEeiNI_ZQtdH1NQ" comment="" name="failureStatus" prompt="failureStatus?" promptNeeded="false" type="id_Boolean" value=""/>
-  <contextParameter xmi:id="_TICYk_xBEeiNI_ZQtdH1NQ" comment="" name="ciamServerError" prompt="ciamServerError?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_TICYlPxBEeiNI_ZQtdH1NQ" comment="" name="inValidRequestJsonError" prompt="inValidRequestJsonError?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_TICYlfxBEeiNI_ZQtdH1NQ" comment="" name="inValidResponseJsonError" prompt="inValidResponseJsonError?" promptNeeded="false" type="id_String" value=""/>
-</talendfile:ContextType>
