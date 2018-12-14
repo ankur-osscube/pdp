@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="filename" prompt="filename?" promptNeeded="false" repositoryContextId="_fAAIYP-fEeiVjv5nouff-Q" type="id_String" value=""/>
+    <contextParameter comment="" name="parentId" prompt="parentId?" promptNeeded="false" repositoryContextId="_fAAIYP-fEeiVjv5nouff-Q" type="id_Integer" value=""/>
+    <contextParameter comment="" name="source" prompt="source?" promptNeeded="false" repositoryContextId="_fAAIYP-fEeiVjv5nouff-Q" type="id_String" value=""/>
+    <contextParameter comment="" name="generalLogDirectory" prompt="generalLogDirectory?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
+    <contextParameter comment="" name="componentLogDirectory" prompt="componentLogDirectory?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
+    <contextParameter comment="" name="logDirectory" prompt="logDirectory?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
+    <contextParameter comment="" name="dataDirectory" prompt="dataDirectory?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
+    <contextParameter comment="" name="mysql_port" prompt="mysql_port?" promptNeeded="false" repositoryContextId="_Au6MENz7Eei4HKMcHTLg6w" type="id_String" value=""/>
     <contextParameter comment="" name="mysql_host" prompt="mysql_host?" promptNeeded="false" repositoryContextId="_Au6MENz7Eei4HKMcHTLg6w" type="id_String" value=""/>
     <contextParameter comment="" name="mysql_user" prompt="mysql_user?" promptNeeded="false" repositoryContextId="_Au6MENz7Eei4HKMcHTLg6w" type="id_String" value=""/>
     <contextParameter comment="" name="mysql_password" prompt="mysql_password?" promptNeeded="false" repositoryContextId="_Au6MENz7Eei4HKMcHTLg6w" type="id_String" value=""/>
     <contextParameter comment="" name="mysql_database" prompt="mysql_database?" promptNeeded="false" repositoryContextId="_Au6MENz7Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="mysql_port" prompt="mysql_port?" promptNeeded="false" repositoryContextId="_Au6MENz7Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="filename" prompt="filename?" promptNeeded="false" type="id_String" value="context.filename"/>
-    <contextParameter comment="" name="source" prompt="source?" promptNeeded="false" type="id_String" value="context.source"/>
-    <contextParameter comment="" name="type" prompt="type?" promptNeeded="false" type="id_String" value="context.type"/>
-    <contextParameter comment="" name="generalLogDirectory" prompt="generalLogDirectory?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="logDirectory" prompt="logDirectory?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="enableLog" prompt="enableLog?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="parentId" prompt="parentId?" promptNeeded="false" type="id_Integer" value=""/>
-    <contextParameter comment="" name="componentLogDirectory" prompt="componentLogDirectory?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="apiLogDirectory" prompt="apiLogDirectory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="type" prompt="type?" promptNeeded="false" repositoryContextId="_fAAIYP-fEeiVjv5nouff-Q" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="64" show="false"/>
@@ -61,7 +60,7 @@
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Info"/>
-    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Info"/>
     <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
     <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
     <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
@@ -123,7 +122,7 @@
     <routinesParameter id="_iayYUO74Eeikmu5wCOWkww" name="Helper"/>
     <routinesParameter id="_VU9dAPkpEeivsaCSq01saA" name="Response"/>
   </parameters>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="608">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
@@ -180,7 +179,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="608">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -241,7 +240,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="source" expression="context.source" type="id_String"/>
       </varTables>
@@ -276,7 +275,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="480">
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -325,7 +324,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="480">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -372,7 +371,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="6" offsetLabelY="6" posX="576" posY="352">
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="6" offsetLabelY="6" posX="608" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -426,7 +425,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="480">
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -508,7 +507,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="704">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -561,7 +560,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="704">
+  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUniqRow_1" show="false"/>
     <elementParameter field="TABLE" name="UNIQUE_KEY">
       <elementValue elementRef="SCHEMA_COLUMN" value="source"/>
@@ -603,7 +602,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="704">
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -672,7 +671,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="832">
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="832">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_3" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -752,7 +751,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="160">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="//Get new hashMap object&#xA;HashMap customerEmailHashMap = Response.initiateHashMap();&#xA;// Put values in hash map&#xA;customerEmailHashMap.put(&quot;source&quot;, input_row.source);&#xA;customerEmailHashMap.put(&quot;legacy_id&quot;, input_row.legacy_id);&#xA;customerEmailHashMap.put(&quot;email&quot;, input_row.email);&#xA;//Convert hashMap to JSON Object&#xA;JSONObject customerEmailObject= Response.getObject(customerEmailHashMap);&#xA;//set log data values&#xA;output_row.dataSourceType = &quot;file&quot;;&#xA;output_row.dataSource = context.filename;&#xA;output_row.jobName = jobName;&#xA;output_row.reason = &quot;legacyIdUnmatchedWithInvalidEmail&quot;;&#xA;output_row.dataJson = customerEmailObject.toString();&#xA;output_row.date =TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;import java.util.HashMap;&#xA;import routines.system.JSONArray;&#xA;import routines.system.JSONObject;"/>
@@ -767,7 +766,7 @@
       <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="160">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_4" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="(java.io.OutputStream)globalMap.get(&quot;dataJsonfile&quot;)" show="false"/>
@@ -807,7 +806,7 @@
       <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="896">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="896">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_4" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="//Get new hashMap object&#xA;HashMap customerEmailHashMap2 = Response.initiateHashMap();&#xA;// Put values in hash map&#xA;customerEmailHashMap2.put(&quot;source&quot;, input_row.source);&#xA;customerEmailHashMap2.put(&quot;legacy_id&quot;, input_row.legacy_id);&#xA;customerEmailHashMap2.put(&quot;email&quot;, input_row.email);&#xA;//Convert hashMap to JSON Object&#xA;JSONObject customerEmailObject2= Response.getObject(customerEmailHashMap2);&#xA;//set log data values&#xA;output_row.dataSourceType = &quot;file&quot;;&#xA;output_row.dataSource = context.filename;&#xA;output_row.jobName = jobName;&#xA;output_row.reason = &quot;legacyIdUnmatchedWithInvalidEmail&quot;;&#xA;output_row.dataJson = customerEmailObject2.toString();&#xA;output_row.date =TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xA;&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;import java.util.HashMap;&#xA;import routines.system.JSONArray;&#xA;import routines.system.JSONObject;"/>
@@ -822,7 +821,7 @@
       <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="896">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="896">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_5" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="(java.io.OutputStream)globalMap.get(&quot;dataJsonfile&quot;)" show="false"/>

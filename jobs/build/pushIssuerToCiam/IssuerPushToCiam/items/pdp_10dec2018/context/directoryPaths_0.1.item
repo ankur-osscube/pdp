@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_pGV5YP6mEeiBC9tJz0QO0w" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_pGV5Yf6mEeiBC9tJz0QO0w" comment="" name="logDirectory" prompt="logDirectory?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_pGV5Yv6mEeiBC9tJz0QO0w" comment="" name="generalLogDirectory" prompt="generalLogDirectory?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_pGV5ZP6mEeiBC9tJz0QO0w" comment="" name="componentLogDirectory" prompt="componentLogDirectory?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_Sxlv8P-NEeiVjv5nouff-Q" comment="" name="dataDirectory" prompt="dataDirectory?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

@@ -34,6 +34,7 @@ public class Response {
 	 public static String success( String string, String msg ) {		  
 		    HashMap rootHashMap = Response.initiateHashMap();
 		    // Put values in hash map
+		    string=Helper.checkIsBlank(string)?null:string;
 		    rootHashMap.put("data", string);
 		    rootHashMap.put("success", true);
 		    rootHashMap.put("msg", msg);
@@ -56,7 +57,7 @@ public class Response {
 		   
 		    HashMap rootHashMap = Response.initiateHashMap();
 		    // Put values in hash map
-		    rootHashMap.put("data", null);
+		   // rootHashMap.put("data", null);
 		    rootHashMap.put("success", false);
 		    rootHashMap.put("msg", msg);
 		    //Convert hashMap to JSON Object

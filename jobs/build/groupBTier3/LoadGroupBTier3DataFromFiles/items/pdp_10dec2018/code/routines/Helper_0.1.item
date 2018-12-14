@@ -89,6 +89,7 @@ public class Helper {
     }
     
     public static String checkIfNotBlankOrNullAndHasValidLength(String valueToCheck, String paramName, Integer minlength, Integer maxlength) {
+    	
     	if(!Helper.checkIsBlankOrNull(valueToCheck)){    	
        		if(Helper.checkIsNotValidLength(valueToCheck,minlength,maxlength)){
        			return paramName+" should contain min "+minlength +" character and max "+maxlength +" characters; ";

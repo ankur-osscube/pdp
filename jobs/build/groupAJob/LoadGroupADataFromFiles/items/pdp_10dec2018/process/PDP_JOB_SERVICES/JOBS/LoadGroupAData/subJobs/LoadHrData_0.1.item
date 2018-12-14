@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="filename" prompt="filename?" promptNeeded="false" type="id_String" value="context.filename"/>
-    <contextParameter comment="" name="parentId" prompt="parentId?" promptNeeded="false" type="id_Integer" value="context.parentId"/>
+    <contextParameter comment="" name="filename" prompt="filename?" promptNeeded="false" repositoryContextId="_5YvPwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
+    <contextParameter comment="" name="parentId" prompt="parentId?" promptNeeded="false" repositoryContextId="_5YvPwNz6Eei4HKMcHTLg6w" type="id_Integer" value=""/>
     <contextParameter comment="" name="mysql_port" prompt="mysql_port?" promptNeeded="false" repositoryContextId="_Au6MENz7Eei4HKMcHTLg6w" type="id_String" value=""/>
     <contextParameter comment="" name="mysql_host" prompt="mysql_host?" promptNeeded="false" repositoryContextId="_Au6MENz7Eei4HKMcHTLg6w" type="id_String" value=""/>
     <contextParameter comment="" name="mysql_user" prompt="mysql_user?" promptNeeded="false" repositoryContextId="_Au6MENz7Eei4HKMcHTLg6w" type="id_String" value=""/>
@@ -11,50 +11,15 @@
     <contextParameter comment="" name="generalLogDirectory" prompt="generalLogDirectory?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
     <contextParameter comment="" name="componentLogDirectory" prompt="componentLogDirectory?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
     <contextParameter comment="" name="logDirectory" prompt="logDirectory?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="enableLog" prompt="enableLog?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
+    <contextParameter comment="" name="dataDirectory" prompt="dataDirectory?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
+    <contextParameter comment="" name="inValidRequestJsonError" prompt="inValidRequestJsonError?" promptNeeded="false" repositoryContextId="_Teh04OZnEeie3vjjbYjeyw" type="id_String" value=""/>
+    <contextParameter comment="" name="licenceReaderServerError" prompt="licenceReaderServerError?" promptNeeded="false" repositoryContextId="_Teh04OZnEeie3vjjbYjeyw" type="id_String" value=""/>
     <contextParameter comment="" name="ciamServerError" prompt="ciamServerError?" promptNeeded="false" repositoryContextId="_Teh04OZnEeie3vjjbYjeyw" type="id_String" value=""/>
     <contextParameter comment="" name="failureStatus" prompt="failureStatus?" promptNeeded="false" repositoryContextId="_Teh04OZnEeie3vjjbYjeyw" type="id_Boolean" value=""/>
     <contextParameter comment="" name="successStatus" prompt="successStatus?" promptNeeded="false" repositoryContextId="_Teh04OZnEeie3vjjbYjeyw" type="id_Boolean" value=""/>
-    <contextParameter comment="" name="talendBaseUrl" prompt="talendBaseUrl?" promptNeeded="false" repositoryContextId="_QrNT4Nz_Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="dataDirectory" prompt="dataDirectory?" promptNeeded="false" repositoryContextId="_QrNT4Nz_Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="inValidRequestJsonError" prompt="inValidRequestJsonError?" promptNeeded="false" repositoryContextId="_Teh04OZnEeie3vjjbYjeyw" type="id_String" value=""/>
-    <contextParameter comment="" name="inValidResponseJsonError" prompt="inValidResponseJsonError?" promptNeeded="false" repositoryContextId="_Teh04OZnEeie3vjjbYjeyw" type="id_String" value=""/>
-    <contextParameter comment="" name="jobName" prompt="jobName?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="reason" prompt="reason?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="dataJson" prompt="dataJson?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="dataSource" prompt="dataSource?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="dataSourceType" prompt="dataSourceType?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiSetMasterChild" prompt="ciamApiSetMasterChild?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
     <contextParameter comment="" name="ciamApiKey" prompt="ciamApiKey?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetCityById" prompt="ciamApiGetCityById?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiUpdateCollection" prompt="ciamApiUpdateCollection?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetOptinServicesList" prompt="ciamApiGetOptinServicesList?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetStateListByCountry" prompt="ciamApiGetStateListByCountry?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiUploadSignature" prompt="ciamApiUploadSignature?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiTermCondition" prompt="ciamApiTermCondition?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiSaveOptinService" prompt="ciamApiSaveOptinService?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiLoginCustomer" prompt="ciamApiLoginCustomer?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetCountryList" prompt="ciamApiGetCountryList?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApisuffix" prompt="ciamApisuffix?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiPushCustomer" prompt="ciamApiPushCustomer?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
     <contextParameter comment="" name="ciamApiBaseUrl" prompt="ciamApiBaseUrl?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetStateById" prompt="ciamApiGetStateById?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetCustomer" prompt="ciamApiGetCustomer?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetDocument" prompt="ciamApiGetDocument?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiSendOtp" prompt="ciamApiSendOtp?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetIssuer" prompt="ciamApiGetIssuer?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiRegisterIssuer" prompt="ciamApiRegisterIssuer?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiRealTime" prompt="ciamApiRealTime?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetCityListByState" prompt="ciamApiGetCityListByState?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetCountryById" prompt="ciamApiGetCountryById?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiRegisterCustomer" prompt="ciamApiRegisterCustomer?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="oFacScanApiKey" prompt="oFacScanApiKey?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiVerifyOtp" prompt="ciamApiVerifyOtp?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiSearchCustomer" prompt="ciamApiSearchCustomer?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="oFacScanUrl" prompt="oFacScanUrl?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiUploadAssets" prompt="ciamApiUploadAssets?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiSearchCustomerOnCiam" prompt="ciamApiSearchCustomerOnCiam?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiLoadGroupADataInCiam" prompt="ciamApiLoadGroupADataInCiam?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
+    <contextParameter comment="" name="ciamApiPushCustomer" prompt="ciamApiPushCustomer?" promptNeeded="false" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="448" show="false"/>
@@ -101,7 +66,7 @@
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Info"/>
-    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Info"/>
     <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
     <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
     <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
@@ -507,30 +472,6 @@
       <column comment="" key="false" length="-1" name="string" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="608">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="string"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="false" length="-1" name="string" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
     <elementParameter field="TEXT" name="URL" value="context.ciamApiBaseUrl+context.ciamApiPushCustomer"/>
@@ -613,19 +554,19 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row3" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="errorCode" type="id_Integer" outgoingConnections="//@node.6/@nodeData/@connections.0" xpath="row3/errorCode"/>
+        <nodes name="errorCode" type="id_Integer" outgoingConnections="//@node.5/@nodeData/@connections.0" xpath="row3/errorCode"/>
         <nodes name="errorMessage" type="id_String" xpath="row3/errorMessage"/>
       </inputTrees>
       <outputTrees name="LogErrorFormCiamApi">
         <nodes name="dataSourceType" expression="&quot;file&quot;" type="id_String" xpath="LogErrorFormCiamApi/dataSourceType" pattern=""/>
         <nodes name="dataSource" expression="context.filename" type="id_String" xpath="LogErrorFormCiamApi/dataSource" pattern=""/>
         <nodes name="jobName" expression="jobName" type="id_String" xpath="LogErrorFormCiamApi/jobName" pattern=""/>
-        <nodes name="reason" expression="ServerErrorCode.toMessage(row3.errorCode) " type="id_String" incomingConnections="//@node.6/@nodeData/@connections.0" xpath="LogErrorFormCiamApi/reason" pattern=""/>
+        <nodes name="reason" expression="ServerErrorCode.toMessage(row3.errorCode) " type="id_String" incomingConnections="//@node.5/@nodeData/@connections.0" xpath="LogErrorFormCiamApi/reason" pattern=""/>
         <nodes name="dataJson" expression="(String) globalMap.get(&quot;dataJson&quot;); " type="id_String" xpath="LogErrorFormCiamApi/dataJson" pattern=""/>
         <nodes name="date" expression="TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;) " type="id_String" xpath="LogErrorFormCiamApi/date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.3"/>
     </nodeData>
   </node>
   <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="736">
@@ -741,32 +682,32 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row14" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="success" type="id_Boolean" filterOutGoingConnections="//@node.9/@nodeData/@connections.0 //@node.9/@nodeData/@connections.1" xpath="row14/success" nullable="false"/>
-        <nodes name="msg" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.2 //@node.9/@nodeData/@connections.3" xpath="row14/msg"/>
-        <nodes name="northgateId" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.4" xpath="row14/northgateId"/>
+        <nodes name="success" type="id_Boolean" filterOutGoingConnections="//@node.8/@nodeData/@connections.0 //@node.8/@nodeData/@connections.1" xpath="row14/success" nullable="false"/>
+        <nodes name="msg" type="id_String" outgoingConnections="//@node.8/@nodeData/@connections.2 //@node.8/@nodeData/@connections.3" xpath="row14/msg"/>
+        <nodes name="northgateId" type="id_String" outgoingConnections="//@node.8/@nodeData/@connections.4" xpath="row14/northgateId"/>
       </inputTrees>
-      <outputTrees expressionFilter="!row14.success" activateExpressionFilter="true" activateCondensedTool="true" name="logValidationError" filterIncomingConnections="//@node.9/@nodeData/@connections.0">
+      <outputTrees expressionFilter="!row14.success" activateExpressionFilter="true" activateCondensedTool="true" name="logValidationError" filterIncomingConnections="//@node.8/@nodeData/@connections.0">
         <nodes name="dataSourceType" expression="&quot;file&quot; " type="id_String" xpath="logValidationError/dataSourceType" nullable="false"/>
         <nodes name="dataSource" expression="context.filename" type="id_String" xpath="logValidationError/dataSource" nullable="false"/>
         <nodes name="jobName" expression="jobName" type="id_String" xpath="logValidationError/jobName" nullable="false"/>
-        <nodes name="reason" expression="row14.msg" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.2" xpath="logValidationError/reason" nullable="false"/>
+        <nodes name="reason" expression="row14.msg" type="id_String" incomingConnections="//@node.8/@nodeData/@connections.2" xpath="logValidationError/reason" nullable="false"/>
         <nodes name="dataJson" expression="(String) globalMap.get(&quot;dataJson&quot;)" type="id_String" xpath="logValidationError/dataJson" nullable="false"/>
         <nodes name="date" expression="TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;)" type="id_String" xpath="logValidationError/date" nullable="false"/>
       </outputTrees>
-      <outputTrees expressionFilter="row14.success" activateExpressionFilter="true" name="logSuccessInsert" filterIncomingConnections="//@node.9/@nodeData/@connections.1">
+      <outputTrees expressionFilter="row14.success" activateExpressionFilter="true" name="logSuccessInsert" filterIncomingConnections="//@node.8/@nodeData/@connections.1">
         <nodes name="dataSourceType" expression="&quot;file&quot; " type="id_String" xpath="logSuccessInsert/dataSourceType" pattern="" nullable="false"/>
         <nodes name="dataSource" expression="context.filename" type="id_String" xpath="logSuccessInsert/dataSource" pattern="" nullable="false"/>
         <nodes name="jobName" expression="jobName" type="id_String" xpath="logSuccessInsert/jobName" pattern="" nullable="false"/>
-        <nodes name="reason" expression="row14.msg + &quot; Northgate Id: &quot; +row14.northgateId " type="id_String" incomingConnections="//@node.9/@nodeData/@connections.3 //@node.9/@nodeData/@connections.4" xpath="logSuccessInsert/reason" pattern="" nullable="false"/>
+        <nodes name="reason" expression="row14.msg + &quot; Northgate Id: &quot; +row14.northgateId " type="id_String" incomingConnections="//@node.8/@nodeData/@connections.3 //@node.8/@nodeData/@connections.4" xpath="logSuccessInsert/reason" pattern="" nullable="false"/>
         <nodes name="dataJson" expression="(String) globalMap.get(&quot;dataJson&quot;)" type="id_String" xpath="logSuccessInsert/dataJson" pattern="" nullable="false"/>
         <nodes name="date" expression="TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;)" type="id_String" xpath="logSuccessInsert/date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" nullable="false"/>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:FilterConnection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0" target="//@node.9/@nodeData/@outputTrees.0"/>
-      <connections xsi:type="TalendXMLMap:FilterConnection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0" target="//@node.9/@nodeData/@outputTrees.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.1" target="//@node.9/@nodeData/@outputTrees.0/@nodes.3"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.1" target="//@node.9/@nodeData/@outputTrees.1/@nodes.3"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.2" target="//@node.9/@nodeData/@outputTrees.1/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:FilterConnection" source="//@node.8/@nodeData/@inputTrees.0/@nodes.0" target="//@node.8/@nodeData/@outputTrees.0"/>
+      <connections xsi:type="TalendXMLMap:FilterConnection" source="//@node.8/@nodeData/@inputTrees.0/@nodes.0" target="//@node.8/@nodeData/@outputTrees.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.8/@nodeData/@inputTrees.0/@nodes.1" target="//@node.8/@nodeData/@outputTrees.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.8/@nodeData/@inputTrees.0/@nodes.1" target="//@node.8/@nodeData/@outputTrees.1/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.8/@nodeData/@inputTrees.0/@nodes.2" target="//@node.8/@nodeData/@outputTrees.1/@nodes.3"/>
     </nodeData>
   </node>
   <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1568" posY="416">
@@ -857,7 +798,7 @@
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="TEXT" name="HOST" value="context.mysql_host"/>
     <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_port"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.mysql_database"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
     <elementParameter field="TEXT" name="USER" value="context.mysql_user"/>
@@ -1445,21 +1386,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="state" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="-3" offsetLabelY="-31" source="tJavaRow_2" target="tLogRow_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="string"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tLogRow_1" offsetLabelX="7" offsetLabelY="-29" source="tLogRow_1" target="tRESTClient_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="string"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="-25" source="tJavaRow_2" target="tRESTClient_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
   </connection>

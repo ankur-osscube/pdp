@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_sqKwIP-QEeiVjv5nouff-Q" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_sqKwIf-QEeiVjv5nouff-Q" comment="" name="id" prompt="id?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_sqKwIv-QEeiVjv5nouff-Q" comment="" name="source" prompt="source?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_sqKwI_-QEeiVjv5nouff-Q" comment="" name="legacy_id" prompt="legacy_id?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_sqKwJP-QEeiVjv5nouff-Q" comment="" name="issuer_name" prompt="issuer_name?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_sqKwJf-QEeiVjv5nouff-Q" comment="" name="issuer_type" prompt="issuer_type?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_sqKwJv-QEeiVjv5nouff-Q" comment="" name="parentId" prompt="parentId?" promptNeeded="false" type="id_Integer" value=""/>
+</talendfile:ContextType>

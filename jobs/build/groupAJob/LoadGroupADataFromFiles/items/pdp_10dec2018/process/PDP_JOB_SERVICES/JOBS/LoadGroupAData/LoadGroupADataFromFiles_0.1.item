@@ -6,60 +6,15 @@
     <contextParameter comment="" name="mysql_password" prompt="mysql_password?" promptNeeded="false" repositoryContextId="_Au6MENz7Eei4HKMcHTLg6w" type="id_String" value=""/>
     <contextParameter comment="" name="mysql_database" prompt="mysql_database?" promptNeeded="false" repositoryContextId="_Au6MENz7Eei4HKMcHTLg6w" type="id_String" value=""/>
     <contextParameter comment="" name="mysql_port" prompt="mysql_port?" promptNeeded="false" repositoryContextId="_Au6MENz7Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="groupAScholarshipFile2" prompt="groupAScholarshipFile2?" promptNeeded="false" repositoryContextId="_5YvPwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="groupAFilesProcessingOrder" prompt="groupAFilesProcessingOrder?" promptNeeded="false" repositoryContextId="_5YvPwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="groupAScholarshipFile1" prompt="groupAScholarshipFile1?" promptNeeded="false" repositoryContextId="_5YvPwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="groupAScholarshipCombinedFile" prompt="groupAScholarshipCombinedFile?" promptNeeded="false" repositoryContextId="_5YvPwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="groupAFilesDirectory" prompt="groupAFilesDirectory?" promptNeeded="false" repositoryContextId="_5YvPwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
     <contextParameter comment="" name="generalLogDirectory" prompt="generalLogDirectory?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
     <contextParameter comment="" name="componentLogDirectory" prompt="componentLogDirectory?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
     <contextParameter comment="" name="logDirectory" prompt="logDirectory?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="enableLog" prompt="enableLog?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="parentId" prompt="parentId?" promptNeeded="false" type="id_Integer" value=""/>
-    <contextParameter comment="" name="filename" prompt="filename?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiSetMasterChild" prompt="ciamApiSetMasterChild?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetOptinServicesList" prompt="ciamApiGetOptinServicesList?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiTermCondition" prompt="ciamApiTermCondition?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetCountryList" prompt="ciamApiGetCountryList?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiSaveOptinService" prompt="ciamApiSaveOptinService?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApisuffix" prompt="ciamApisuffix?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiPushCustomer" prompt="ciamApiPushCustomer?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiBaseUrl" prompt="ciamApiBaseUrl?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetCustomer" prompt="ciamApiGetCustomer?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiSendOtp" prompt="ciamApiSendOtp?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiRealTime" prompt="ciamApiRealTime?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiRegisterCustomer" prompt="ciamApiRegisterCustomer?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="oFacScanApiKey" prompt="oFacScanApiKey?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiVerifyOtp" prompt="ciamApiVerifyOtp?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiSearchCustomer" prompt="ciamApiSearchCustomer?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="oFacScanUrl" prompt="oFacScanUrl?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiLoadGroupADataInCiam" prompt="ciamApiLoadGroupADataInCiam?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiKey" prompt="ciamApiKey?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetCityById" prompt="ciamApiGetCityById?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetStateListByCountry" prompt="ciamApiGetStateListByCountry?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiUploadSignature" prompt="ciamApiUploadSignature?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiLoginCustomer" prompt="ciamApiLoginCustomer?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetStateById" prompt="ciamApiGetStateById?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetIssuer" prompt="ciamApiGetIssuer?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetCityListByState" prompt="ciamApiGetCityListByState?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetCountryById" prompt="ciamApiGetCountryById?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiUploadAssets" prompt="ciamApiUploadAssets?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="talendBaseUrl" prompt="talendBaseUrl?" promptNeeded="false" repositoryContextId="_QrNT4Nz_Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="dataDirectory" prompt="dataDirectory?" promptNeeded="false" repositoryContextId="_QrNT4Nz_Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiUpdateCollection" prompt="ciamApiUpdateCollection?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiGetDocument" prompt="ciamApiGetDocument?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiRegisterIssuer" prompt="ciamApiRegisterIssuer?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamApiSearchCustomerOnCiam" prompt="ciamApiSearchCustomerOnCiam?" promptNeeded="false" repositoryContextId="_9R6gwNz6Eei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="jobName" prompt="jobName?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="reason" prompt="reason?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="dataJson" prompt="dataJson?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="dataSource" prompt="dataSource?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="dataSourceType" prompt="dataSourceType?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
-    <contextParameter comment="" name="inValidRequestJsonError" prompt="inValidRequestJsonError?" promptNeeded="false" repositoryContextId="_Teh04OZnEeie3vjjbYjeyw" type="id_String" value=""/>
-    <contextParameter comment="" name="inValidResponseJsonError" prompt="inValidResponseJsonError?" promptNeeded="false" repositoryContextId="_Teh04OZnEeie3vjjbYjeyw" type="id_String" value=""/>
-    <contextParameter comment="" name="ciamServerError" prompt="ciamServerError?" promptNeeded="false" repositoryContextId="_Teh04OZnEeie3vjjbYjeyw" type="id_String" value=""/>
-    <contextParameter comment="" name="failureStatus" prompt="failureStatus?" promptNeeded="false" repositoryContextId="_Teh04OZnEeie3vjjbYjeyw" type="id_Boolean" value=""/>
-    <contextParameter comment="" name="successStatus" prompt="successStatus?" promptNeeded="false" repositoryContextId="_Teh04OZnEeie3vjjbYjeyw" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="dataDirectory" prompt="dataDirectory?" promptNeeded="false" repositoryContextId="_FTz5oN0GEei4HKMcHTLg6w" type="id_String" value=""/>
+    <contextParameter comment="" name="groupAScholarshipFile2" prompt="groupAScholarshipFile2?" promptNeeded="false" repositoryContextId="_eCFrcP-bEeiVjv5nouff-Q" type="id_String" value=""/>
+    <contextParameter comment="" name="groupAFilesProcessingOrder" prompt="groupAFilesProcessingOrder?" promptNeeded="false" repositoryContextId="_eCFrcP-bEeiVjv5nouff-Q" type="id_String" value=""/>
+    <contextParameter comment="" name="groupAScholarshipFile1" prompt="groupAScholarshipFile1?" promptNeeded="false" repositoryContextId="_eCFrcP-bEeiVjv5nouff-Q" type="id_String" value=""/>
+    <contextParameter comment="" name="groupAScholarshipCombinedFile" prompt="groupAScholarshipCombinedFile?" promptNeeded="false" repositoryContextId="_eCFrcP-bEeiVjv5nouff-Q" type="id_String" value=""/>
+    <contextParameter comment="" name="groupAFilesDirectory" prompt="groupAFilesDirectory?" promptNeeded="false" repositoryContextId="_eCFrcP-bEeiVjv5nouff-Q" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="96" show="false"/>
@@ -483,7 +438,7 @@
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="TEXT" name="HOST" value="context.mysql_host"/>
     <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_port"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.mysql_database"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
     <elementParameter field="TEXT" name="USER" value="context.mysql_user"/>
@@ -1019,33 +974,6 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="672">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
-    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
-    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="LoadScholarshipData"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_WaIbYNX1Eei0vuJ7O-bxYA"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
-    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
-    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
-    <elementParameter field="TABLE" name="CONTEXTPARAMS">
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="filename"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(String) scholarship.filename"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="parentId"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Integer) globalMap.get(&quot;parentId&quot;)"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="Scholarship SubJob"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="powerCheck" name="tRunJob_3">
-      <column comment="" key="false" length="-1" name="filename" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
@@ -1064,7 +992,7 @@
       <elementValue elementRef="PARAM_NAME_COLUMN" value="parentId"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Integer) globalMap.get(&quot;parentId&quot;)"/>
     </elementParameter>
-    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="true"/>
     <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="HrData SubJob"/>
@@ -1097,6 +1025,33 @@
     <elementParameter field="TEXT" name="LABEL" value="Pronto SubJob"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="tier3" name="tRunJob_2">
+      <column comment="" key="false" length="-1" name="filename" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="672">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="LoadScholarshipData"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_WaIbYNX1Eei0vuJ7O-bxYA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="filename"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(String) scholarship.filename"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parentId"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Integer) globalMap.get(&quot;parentId&quot;)"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Scholarship SubJob"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="powerCheck" name="tRunJob_3">
       <column comment="" key="false" length="-1" name="filename" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
@@ -1240,18 +1195,18 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="hrdata" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="scholarship" lineStyle="0" metaname="scholarship" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tRunJob_3">
+  <connection connectorName="FLOW" label="pronto" lineStyle="0" metaname="pronto" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tRunJob_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="pronto" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="scholarship" lineStyle="0" metaname="scholarship" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_1" target="tRunJob_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="scholarship" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="wifi" lineStyle="0" metaname="wifi" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_1" target="tRunJob_4">
+  <connection connectorName="FLOW" label="wifi" lineStyle="0" metaname="wifi" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tMap_1" target="tRunJob_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="wifi" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="pronto" lineStyle="0" metaname="pronto" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tMap_1" target="tRunJob_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="pronto" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileDelete_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileDelete_1" target="tFileInputDelimited_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>

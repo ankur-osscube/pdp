@@ -136,15 +136,15 @@ protected static void logIgnoredError(String message, Throwable cause) {
 				
 			}
 			
-			if(groupBFilesDirectory != null){
+			if(groupBPowerCheckFilesDirectory != null){
 				
-					this.setProperty("groupBFilesDirectory", groupBFilesDirectory.toString());
+					this.setProperty("groupBPowerCheckFilesDirectory", groupBPowerCheckFilesDirectory.toString());
 				
 			}
 			
-			if(dataDirectory != null){
+			if(groupBFilesDirectory != null){
 				
-					this.setProperty("dataDirectory", dataDirectory.toString());
+					this.setProperty("groupBFilesDirectory", groupBFilesDirectory.toString());
 				
 			}
 			
@@ -166,15 +166,9 @@ protected static void logIgnoredError(String message, Throwable cause) {
 				
 			}
 			
-			if(enableLog != null){
+			if(dataDirectory != null){
 				
-					this.setProperty("enableLog", enableLog.toString());
-				
-			}
-			
-			if(apiLogDirectory != null){
-				
-					this.setProperty("apiLogDirectory", apiLogDirectory.toString());
+					this.setProperty("dataDirectory", dataDirectory.toString());
 				
 			}
 			
@@ -208,12 +202,6 @@ protected static void logIgnoredError(String message, Throwable cause) {
 				
 			}
 			
-			if(parentId != null){
-				
-					this.setProperty("parentId", parentId.toString());
-				
-			}
-			
 		}
 
 public String groupBFilesProcessingOrder;
@@ -224,13 +212,13 @@ public String groupBTier3FilesDirectory;
 public String getGroupBTier3FilesDirectory(){
 	return this.groupBTier3FilesDirectory;
 }
+public String groupBPowerCheckFilesDirectory;
+public String getGroupBPowerCheckFilesDirectory(){
+	return this.groupBPowerCheckFilesDirectory;
+}
 public String groupBFilesDirectory;
 public String getGroupBFilesDirectory(){
 	return this.groupBFilesDirectory;
-}
-public String dataDirectory;
-public String getDataDirectory(){
-	return this.dataDirectory;
 }
 public String generalLogDirectory;
 public String getGeneralLogDirectory(){
@@ -244,13 +232,9 @@ public String logDirectory;
 public String getLogDirectory(){
 	return this.logDirectory;
 }
-public String enableLog;
-public String getEnableLog(){
-	return this.enableLog;
-}
-public String apiLogDirectory;
-public String getApiLogDirectory(){
-	return this.apiLogDirectory;
+public String dataDirectory;
+public String getDataDirectory(){
+	return this.dataDirectory;
 }
 public String mysql_port;
 public String getMysql_port(){
@@ -271,10 +255,6 @@ public String getMysql_password(){
 public String mysql_database;
 public String getMysql_database(){
 	return this.mysql_database;
-}
-public Integer parentId;
-public Integer getParentId(){
-	return this.parentId;
 }
 	}
 	private ContextProperties context = new ContextProperties();
@@ -1216,14 +1196,14 @@ if(row_Implicit_Context_Regex != null) {
            context.groupBTier3FilesDirectory=value_Implicit_Context_Context;
         }
 
+        if(key_Implicit_Context_Context!=null && "groupBPowerCheckFilesDirectory".equals(key_Implicit_Context_Context))
+        {
+           context.groupBPowerCheckFilesDirectory=value_Implicit_Context_Context;
+        }
+
         if(key_Implicit_Context_Context!=null && "groupBFilesDirectory".equals(key_Implicit_Context_Context))
         {
            context.groupBFilesDirectory=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "dataDirectory".equals(key_Implicit_Context_Context))
-        {
-           context.dataDirectory=value_Implicit_Context_Context;
         }
 
         if(key_Implicit_Context_Context!=null && "generalLogDirectory".equals(key_Implicit_Context_Context))
@@ -1241,14 +1221,9 @@ if(row_Implicit_Context_Regex != null) {
            context.logDirectory=value_Implicit_Context_Context;
         }
 
-        if(key_Implicit_Context_Context!=null && "enableLog".equals(key_Implicit_Context_Context))
+        if(key_Implicit_Context_Context!=null && "dataDirectory".equals(key_Implicit_Context_Context))
         {
-           context.enableLog=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "apiLogDirectory".equals(key_Implicit_Context_Context))
-        {
-           context.apiLogDirectory=value_Implicit_Context_Context;
+           context.dataDirectory=value_Implicit_Context_Context;
         }
 
         if(key_Implicit_Context_Context!=null && "mysql_port".equals(key_Implicit_Context_Context))
@@ -1274,13 +1249,6 @@ if(row_Implicit_Context_Regex != null) {
         if(key_Implicit_Context_Context!=null && "mysql_database".equals(key_Implicit_Context_Context))
         {
            context.mysql_database=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "parentId".equals(key_Implicit_Context_Context))
-        {
-
-                context.parentId=Integer.parseInt(value_Implicit_Context_Context);
-
         }
 
 
@@ -3261,7 +3229,7 @@ public void tDBConnection_1Process(final java.util.Map<String, Object> globalMap
 			properties_tDBConnection_1 += "&rewriteBatchedStatements=true";
 		}
 		
-		String url_tDBConnection_1 = "jdbc:mysql://" + context.mysql_host + ":" + "3306" + "/" + context.mysql_database + "?" + properties_tDBConnection_1;
+		String url_tDBConnection_1 = "jdbc:mysql://" + context.mysql_host + ":" + context.mysql_port + "/" + context.mysql_database + "?" + properties_tDBConnection_1;
 
 	String dbUser_tDBConnection_1 = context.mysql_user;
 	
@@ -11637,12 +11605,12 @@ end_Hash.put("tRunJob_9", System.currentTimeMillis());
 				    context.setContextType("groupBTier3FilesDirectory", "id_String");
 				
                 context.groupBTier3FilesDirectory=(String) context.getProperty("groupBTier3FilesDirectory");
+				    context.setContextType("groupBPowerCheckFilesDirectory", "id_String");
+				
+                context.groupBPowerCheckFilesDirectory=(String) context.getProperty("groupBPowerCheckFilesDirectory");
 				    context.setContextType("groupBFilesDirectory", "id_String");
 				
                 context.groupBFilesDirectory=(String) context.getProperty("groupBFilesDirectory");
-				    context.setContextType("dataDirectory", "id_String");
-				
-                context.dataDirectory=(String) context.getProperty("dataDirectory");
 				    context.setContextType("generalLogDirectory", "id_String");
 				
                 context.generalLogDirectory=(String) context.getProperty("generalLogDirectory");
@@ -11652,12 +11620,9 @@ end_Hash.put("tRunJob_9", System.currentTimeMillis());
 				    context.setContextType("logDirectory", "id_String");
 				
                 context.logDirectory=(String) context.getProperty("logDirectory");
-				    context.setContextType("enableLog", "id_String");
+				    context.setContextType("dataDirectory", "id_String");
 				
-                context.enableLog=(String) context.getProperty("enableLog");
-				    context.setContextType("apiLogDirectory", "id_String");
-				
-                context.apiLogDirectory=(String) context.getProperty("apiLogDirectory");
+                context.dataDirectory=(String) context.getProperty("dataDirectory");
 				    context.setContextType("mysql_port", "id_String");
 				
                 context.mysql_port=(String) context.getProperty("mysql_port");
@@ -11673,13 +11638,6 @@ end_Hash.put("tRunJob_9", System.currentTimeMillis());
 				    context.setContextType("mysql_database", "id_String");
 				
                 context.mysql_database=(String) context.getProperty("mysql_database");
-				    context.setContextType("parentId", "id_Integer");
-				
-             try{
-                 context.parentId=routines.system.ParserUtils.parseTo_Integer (context.getProperty("parentId"));
-             }catch(NumberFormatException e){
-                 context.parentId=null;
-              }
         } catch (java.io.IOException ie) {
             System.err.println("Could not load context "+contextStr);
             ie.printStackTrace();
@@ -11691,20 +11649,18 @@ end_Hash.put("tRunJob_9", System.currentTimeMillis());
                 context.groupBFilesProcessingOrder = (String) parentContextMap.get("groupBFilesProcessingOrder");
             }if (parentContextMap.containsKey("groupBTier3FilesDirectory")) {
                 context.groupBTier3FilesDirectory = (String) parentContextMap.get("groupBTier3FilesDirectory");
+            }if (parentContextMap.containsKey("groupBPowerCheckFilesDirectory")) {
+                context.groupBPowerCheckFilesDirectory = (String) parentContextMap.get("groupBPowerCheckFilesDirectory");
             }if (parentContextMap.containsKey("groupBFilesDirectory")) {
                 context.groupBFilesDirectory = (String) parentContextMap.get("groupBFilesDirectory");
-            }if (parentContextMap.containsKey("dataDirectory")) {
-                context.dataDirectory = (String) parentContextMap.get("dataDirectory");
             }if (parentContextMap.containsKey("generalLogDirectory")) {
                 context.generalLogDirectory = (String) parentContextMap.get("generalLogDirectory");
             }if (parentContextMap.containsKey("componentLogDirectory")) {
                 context.componentLogDirectory = (String) parentContextMap.get("componentLogDirectory");
             }if (parentContextMap.containsKey("logDirectory")) {
                 context.logDirectory = (String) parentContextMap.get("logDirectory");
-            }if (parentContextMap.containsKey("enableLog")) {
-                context.enableLog = (String) parentContextMap.get("enableLog");
-            }if (parentContextMap.containsKey("apiLogDirectory")) {
-                context.apiLogDirectory = (String) parentContextMap.get("apiLogDirectory");
+            }if (parentContextMap.containsKey("dataDirectory")) {
+                context.dataDirectory = (String) parentContextMap.get("dataDirectory");
             }if (parentContextMap.containsKey("mysql_port")) {
                 context.mysql_port = (String) parentContextMap.get("mysql_port");
             }if (parentContextMap.containsKey("mysql_host")) {
@@ -11715,8 +11671,6 @@ end_Hash.put("tRunJob_9", System.currentTimeMillis());
                 context.mysql_password = (String) parentContextMap.get("mysql_password");
             }if (parentContextMap.containsKey("mysql_database")) {
                 context.mysql_database = (String) parentContextMap.get("mysql_database");
-            }if (parentContextMap.containsKey("parentId")) {
-                context.parentId = (Integer) parentContextMap.get("parentId");
             }
         }
 
@@ -11982,6 +11936,6 @@ if (execStat) {
     ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- *     271772 characters generated by Talend Open Studio for ESB 
- *     on the 12 December, 2018 3:51:12 PM IST
+ *     270527 characters generated by Talend Open Studio for ESB 
+ *     on the 14 December, 2018 7:46:57 PM IST
  ************************************************************************************************/

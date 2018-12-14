@@ -130,6 +130,12 @@ protected static void logIgnoredError(String message, Throwable cause) {
 				
 			}
 			
+			if(groupBTier3FilesDirectory != null){
+				
+					this.setProperty("groupBTier3FilesDirectory", groupBTier3FilesDirectory.toString());
+				
+			}
+			
 			if(groupBPowerCheckFilesDirectory != null){
 				
 					this.setProperty("groupBPowerCheckFilesDirectory", groupBPowerCheckFilesDirectory.toString());
@@ -139,36 +145,6 @@ protected static void logIgnoredError(String message, Throwable cause) {
 			if(groupBFilesDirectory != null){
 				
 					this.setProperty("groupBFilesDirectory", groupBFilesDirectory.toString());
-				
-			}
-			
-			if(dataDirectory != null){
-				
-					this.setProperty("dataDirectory", dataDirectory.toString());
-				
-			}
-			
-			if(generalLogDirectory != null){
-				
-					this.setProperty("generalLogDirectory", generalLogDirectory.toString());
-				
-			}
-			
-			if(componentLogDirectory != null){
-				
-					this.setProperty("componentLogDirectory", componentLogDirectory.toString());
-				
-			}
-			
-			if(logDirectory != null){
-				
-					this.setProperty("logDirectory", logDirectory.toString());
-				
-			}
-			
-			if(enableLog != null){
-				
-					this.setProperty("enableLog", enableLog.toString());
 				
 			}
 			
@@ -202,45 +178,27 @@ protected static void logIgnoredError(String message, Throwable cause) {
 				
 			}
 			
-			if(parentId != null){
+			if(generalLogDirectory != null){
 				
-					this.setProperty("parentId", parentId.toString());
-				
-			}
-			
-			if(talendBaseUrl != null){
-				
-					this.setProperty("talendBaseUrl", talendBaseUrl.toString());
+					this.setProperty("generalLogDirectory", generalLogDirectory.toString());
 				
 			}
 			
-			if(jobName != null){
+			if(componentLogDirectory != null){
 				
-					this.setProperty("jobName", jobName.toString());
-				
-			}
-			
-			if(reason != null){
-				
-					this.setProperty("reason", reason.toString());
+					this.setProperty("componentLogDirectory", componentLogDirectory.toString());
 				
 			}
 			
-			if(dataJson != null){
+			if(logDirectory != null){
 				
-					this.setProperty("dataJson", dataJson.toString());
-				
-			}
-			
-			if(dataSource != null){
-				
-					this.setProperty("dataSource", dataSource.toString());
+					this.setProperty("logDirectory", logDirectory.toString());
 				
 			}
 			
-			if(dataSourceType != null){
+			if(dataDirectory != null){
 				
-					this.setProperty("dataSourceType", dataSourceType.toString());
+					this.setProperty("dataDirectory", dataDirectory.toString());
 				
 			}
 			
@@ -250,6 +208,10 @@ public String groupBFilesProcessingOrder;
 public String getGroupBFilesProcessingOrder(){
 	return this.groupBFilesProcessingOrder;
 }
+public String groupBTier3FilesDirectory;
+public String getGroupBTier3FilesDirectory(){
+	return this.groupBTier3FilesDirectory;
+}
 public String groupBPowerCheckFilesDirectory;
 public String getGroupBPowerCheckFilesDirectory(){
 	return this.groupBPowerCheckFilesDirectory;
@@ -257,26 +219,6 @@ public String getGroupBPowerCheckFilesDirectory(){
 public String groupBFilesDirectory;
 public String getGroupBFilesDirectory(){
 	return this.groupBFilesDirectory;
-}
-public String dataDirectory;
-public String getDataDirectory(){
-	return this.dataDirectory;
-}
-public String generalLogDirectory;
-public String getGeneralLogDirectory(){
-	return this.generalLogDirectory;
-}
-public String componentLogDirectory;
-public String getComponentLogDirectory(){
-	return this.componentLogDirectory;
-}
-public String logDirectory;
-public String getLogDirectory(){
-	return this.logDirectory;
-}
-public String enableLog;
-public String getEnableLog(){
-	return this.enableLog;
 }
 public String mysql_port;
 public String getMysql_port(){
@@ -298,33 +240,21 @@ public String mysql_database;
 public String getMysql_database(){
 	return this.mysql_database;
 }
-public Integer parentId;
-public Integer getParentId(){
-	return this.parentId;
+public String generalLogDirectory;
+public String getGeneralLogDirectory(){
+	return this.generalLogDirectory;
 }
-public String talendBaseUrl;
-public String getTalendBaseUrl(){
-	return this.talendBaseUrl;
+public String componentLogDirectory;
+public String getComponentLogDirectory(){
+	return this.componentLogDirectory;
 }
-public String jobName;
-public String getJobName(){
-	return this.jobName;
+public String logDirectory;
+public String getLogDirectory(){
+	return this.logDirectory;
 }
-public String reason;
-public String getReason(){
-	return this.reason;
-}
-public String dataJson;
-public String getDataJson(){
-	return this.dataJson;
-}
-public String dataSource;
-public String getDataSource(){
-	return this.dataSource;
-}
-public String dataSourceType;
-public String getDataSourceType(){
-	return this.dataSourceType;
+public String dataDirectory;
+public String getDataDirectory(){
+	return this.dataDirectory;
 }
 	}
 	private ContextProperties context = new ContextProperties();
@@ -1261,6 +1191,11 @@ if(row_Implicit_Context_Regex != null) {
            context.groupBFilesProcessingOrder=value_Implicit_Context_Context;
         }
 
+        if(key_Implicit_Context_Context!=null && "groupBTier3FilesDirectory".equals(key_Implicit_Context_Context))
+        {
+           context.groupBTier3FilesDirectory=value_Implicit_Context_Context;
+        }
+
         if(key_Implicit_Context_Context!=null && "groupBPowerCheckFilesDirectory".equals(key_Implicit_Context_Context))
         {
            context.groupBPowerCheckFilesDirectory=value_Implicit_Context_Context;
@@ -1269,31 +1204,6 @@ if(row_Implicit_Context_Regex != null) {
         if(key_Implicit_Context_Context!=null && "groupBFilesDirectory".equals(key_Implicit_Context_Context))
         {
            context.groupBFilesDirectory=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "dataDirectory".equals(key_Implicit_Context_Context))
-        {
-           context.dataDirectory=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "generalLogDirectory".equals(key_Implicit_Context_Context))
-        {
-           context.generalLogDirectory=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "componentLogDirectory".equals(key_Implicit_Context_Context))
-        {
-           context.componentLogDirectory=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "logDirectory".equals(key_Implicit_Context_Context))
-        {
-           context.logDirectory=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "enableLog".equals(key_Implicit_Context_Context))
-        {
-           context.enableLog=value_Implicit_Context_Context;
         }
 
         if(key_Implicit_Context_Context!=null && "mysql_port".equals(key_Implicit_Context_Context))
@@ -1321,41 +1231,24 @@ if(row_Implicit_Context_Regex != null) {
            context.mysql_database=value_Implicit_Context_Context;
         }
 
-        if(key_Implicit_Context_Context!=null && "parentId".equals(key_Implicit_Context_Context))
+        if(key_Implicit_Context_Context!=null && "generalLogDirectory".equals(key_Implicit_Context_Context))
         {
-
-                context.parentId=Integer.parseInt(value_Implicit_Context_Context);
-
+           context.generalLogDirectory=value_Implicit_Context_Context;
         }
 
-        if(key_Implicit_Context_Context!=null && "talendBaseUrl".equals(key_Implicit_Context_Context))
+        if(key_Implicit_Context_Context!=null && "componentLogDirectory".equals(key_Implicit_Context_Context))
         {
-           context.talendBaseUrl=value_Implicit_Context_Context;
+           context.componentLogDirectory=value_Implicit_Context_Context;
         }
 
-        if(key_Implicit_Context_Context!=null && "jobName".equals(key_Implicit_Context_Context))
+        if(key_Implicit_Context_Context!=null && "logDirectory".equals(key_Implicit_Context_Context))
         {
-           context.jobName=value_Implicit_Context_Context;
+           context.logDirectory=value_Implicit_Context_Context;
         }
 
-        if(key_Implicit_Context_Context!=null && "reason".equals(key_Implicit_Context_Context))
+        if(key_Implicit_Context_Context!=null && "dataDirectory".equals(key_Implicit_Context_Context))
         {
-           context.reason=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "dataJson".equals(key_Implicit_Context_Context))
-        {
-           context.dataJson=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "dataSource".equals(key_Implicit_Context_Context))
-        {
-           context.dataSource=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "dataSourceType".equals(key_Implicit_Context_Context))
-        {
-           context.dataSourceType=value_Implicit_Context_Context;
+           context.dataDirectory=value_Implicit_Context_Context;
         }
 
 
@@ -3341,7 +3234,7 @@ public void tDBConnection_1Process(final java.util.Map<String, Object> globalMap
 			properties_tDBConnection_1 += "&rewriteBatchedStatements=true";
 		}
 		
-		String url_tDBConnection_1 = "jdbc:mysql://" + context.mysql_host + ":" + "3306" + "/" + context.mysql_database + "?" + properties_tDBConnection_1;
+		String url_tDBConnection_1 = "jdbc:mysql://" + context.mysql_host + ":" + context.mysql_port + "/" + context.mysql_database + "?" + properties_tDBConnection_1;
 
 	String dbUser_tDBConnection_1 = context.mysql_user;
 	
@@ -11714,27 +11607,15 @@ end_Hash.put("tRunJob_9", System.currentTimeMillis());
 				    context.setContextType("groupBFilesProcessingOrder", "id_String");
 				
                 context.groupBFilesProcessingOrder=(String) context.getProperty("groupBFilesProcessingOrder");
+				    context.setContextType("groupBTier3FilesDirectory", "id_String");
+				
+                context.groupBTier3FilesDirectory=(String) context.getProperty("groupBTier3FilesDirectory");
 				    context.setContextType("groupBPowerCheckFilesDirectory", "id_String");
 				
                 context.groupBPowerCheckFilesDirectory=(String) context.getProperty("groupBPowerCheckFilesDirectory");
 				    context.setContextType("groupBFilesDirectory", "id_String");
 				
                 context.groupBFilesDirectory=(String) context.getProperty("groupBFilesDirectory");
-				    context.setContextType("dataDirectory", "id_String");
-				
-                context.dataDirectory=(String) context.getProperty("dataDirectory");
-				    context.setContextType("generalLogDirectory", "id_String");
-				
-                context.generalLogDirectory=(String) context.getProperty("generalLogDirectory");
-				    context.setContextType("componentLogDirectory", "id_String");
-				
-                context.componentLogDirectory=(String) context.getProperty("componentLogDirectory");
-				    context.setContextType("logDirectory", "id_String");
-				
-                context.logDirectory=(String) context.getProperty("logDirectory");
-				    context.setContextType("enableLog", "id_String");
-				
-                context.enableLog=(String) context.getProperty("enableLog");
 				    context.setContextType("mysql_port", "id_String");
 				
                 context.mysql_port=(String) context.getProperty("mysql_port");
@@ -11750,31 +11631,18 @@ end_Hash.put("tRunJob_9", System.currentTimeMillis());
 				    context.setContextType("mysql_database", "id_String");
 				
                 context.mysql_database=(String) context.getProperty("mysql_database");
-				    context.setContextType("parentId", "id_Integer");
+				    context.setContextType("generalLogDirectory", "id_String");
 				
-             try{
-                 context.parentId=routines.system.ParserUtils.parseTo_Integer (context.getProperty("parentId"));
-             }catch(NumberFormatException e){
-                 context.parentId=null;
-              }
-				    context.setContextType("talendBaseUrl", "id_String");
+                context.generalLogDirectory=(String) context.getProperty("generalLogDirectory");
+				    context.setContextType("componentLogDirectory", "id_String");
 				
-                context.talendBaseUrl=(String) context.getProperty("talendBaseUrl");
-				    context.setContextType("jobName", "id_String");
+                context.componentLogDirectory=(String) context.getProperty("componentLogDirectory");
+				    context.setContextType("logDirectory", "id_String");
 				
-                context.jobName=(String) context.getProperty("jobName");
-				    context.setContextType("reason", "id_String");
+                context.logDirectory=(String) context.getProperty("logDirectory");
+				    context.setContextType("dataDirectory", "id_String");
 				
-                context.reason=(String) context.getProperty("reason");
-				    context.setContextType("dataJson", "id_String");
-				
-                context.dataJson=(String) context.getProperty("dataJson");
-				    context.setContextType("dataSource", "id_String");
-				
-                context.dataSource=(String) context.getProperty("dataSource");
-				    context.setContextType("dataSourceType", "id_String");
-				
-                context.dataSourceType=(String) context.getProperty("dataSourceType");
+                context.dataDirectory=(String) context.getProperty("dataDirectory");
         } catch (java.io.IOException ie) {
             System.err.println("Could not load context "+contextStr);
             ie.printStackTrace();
@@ -11784,20 +11652,12 @@ end_Hash.put("tRunJob_9", System.currentTimeMillis());
         // get context value from parent directly
         if (parentContextMap != null && !parentContextMap.isEmpty()) {if (parentContextMap.containsKey("groupBFilesProcessingOrder")) {
                 context.groupBFilesProcessingOrder = (String) parentContextMap.get("groupBFilesProcessingOrder");
+            }if (parentContextMap.containsKey("groupBTier3FilesDirectory")) {
+                context.groupBTier3FilesDirectory = (String) parentContextMap.get("groupBTier3FilesDirectory");
             }if (parentContextMap.containsKey("groupBPowerCheckFilesDirectory")) {
                 context.groupBPowerCheckFilesDirectory = (String) parentContextMap.get("groupBPowerCheckFilesDirectory");
             }if (parentContextMap.containsKey("groupBFilesDirectory")) {
                 context.groupBFilesDirectory = (String) parentContextMap.get("groupBFilesDirectory");
-            }if (parentContextMap.containsKey("dataDirectory")) {
-                context.dataDirectory = (String) parentContextMap.get("dataDirectory");
-            }if (parentContextMap.containsKey("generalLogDirectory")) {
-                context.generalLogDirectory = (String) parentContextMap.get("generalLogDirectory");
-            }if (parentContextMap.containsKey("componentLogDirectory")) {
-                context.componentLogDirectory = (String) parentContextMap.get("componentLogDirectory");
-            }if (parentContextMap.containsKey("logDirectory")) {
-                context.logDirectory = (String) parentContextMap.get("logDirectory");
-            }if (parentContextMap.containsKey("enableLog")) {
-                context.enableLog = (String) parentContextMap.get("enableLog");
             }if (parentContextMap.containsKey("mysql_port")) {
                 context.mysql_port = (String) parentContextMap.get("mysql_port");
             }if (parentContextMap.containsKey("mysql_host")) {
@@ -11808,20 +11668,14 @@ end_Hash.put("tRunJob_9", System.currentTimeMillis());
                 context.mysql_password = (String) parentContextMap.get("mysql_password");
             }if (parentContextMap.containsKey("mysql_database")) {
                 context.mysql_database = (String) parentContextMap.get("mysql_database");
-            }if (parentContextMap.containsKey("parentId")) {
-                context.parentId = (Integer) parentContextMap.get("parentId");
-            }if (parentContextMap.containsKey("talendBaseUrl")) {
-                context.talendBaseUrl = (String) parentContextMap.get("talendBaseUrl");
-            }if (parentContextMap.containsKey("jobName")) {
-                context.jobName = (String) parentContextMap.get("jobName");
-            }if (parentContextMap.containsKey("reason")) {
-                context.reason = (String) parentContextMap.get("reason");
-            }if (parentContextMap.containsKey("dataJson")) {
-                context.dataJson = (String) parentContextMap.get("dataJson");
-            }if (parentContextMap.containsKey("dataSource")) {
-                context.dataSource = (String) parentContextMap.get("dataSource");
-            }if (parentContextMap.containsKey("dataSourceType")) {
-                context.dataSourceType = (String) parentContextMap.get("dataSourceType");
+            }if (parentContextMap.containsKey("generalLogDirectory")) {
+                context.generalLogDirectory = (String) parentContextMap.get("generalLogDirectory");
+            }if (parentContextMap.containsKey("componentLogDirectory")) {
+                context.componentLogDirectory = (String) parentContextMap.get("componentLogDirectory");
+            }if (parentContextMap.containsKey("logDirectory")) {
+                context.logDirectory = (String) parentContextMap.get("logDirectory");
+            }if (parentContextMap.containsKey("dataDirectory")) {
+                context.dataDirectory = (String) parentContextMap.get("dataDirectory");
             }
         }
 
@@ -12087,6 +11941,6 @@ if (execStat) {
     ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- *     276245 characters generated by Talend Open Studio for ESB 
- *     on the 12 December, 2018 3:50:50 PM IST
+ *     271723 characters generated by Talend Open Studio for ESB 
+ *     on the 14 December, 2018 7:46:32 PM IST
  ************************************************************************************************/

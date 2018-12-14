@@ -157,6 +157,30 @@ protected static void logIgnoredError(String message, Throwable cause) {
 				
 			}
 			
+			if(generalLogDirectory != null){
+				
+					this.setProperty("generalLogDirectory", generalLogDirectory.toString());
+				
+			}
+			
+			if(componentLogDirectory != null){
+				
+					this.setProperty("componentLogDirectory", componentLogDirectory.toString());
+				
+			}
+			
+			if(logDirectory != null){
+				
+					this.setProperty("logDirectory", logDirectory.toString());
+				
+			}
+			
+			if(dataDirectory != null){
+				
+					this.setProperty("dataDirectory", dataDirectory.toString());
+				
+			}
+			
 			if(groupAScholarshipFile2 != null){
 				
 					this.setProperty("groupAScholarshipFile2", groupAScholarshipFile2.toString());
@@ -187,300 +211,6 @@ protected static void logIgnoredError(String message, Throwable cause) {
 				
 			}
 			
-			if(generalLogDirectory != null){
-				
-					this.setProperty("generalLogDirectory", generalLogDirectory.toString());
-				
-			}
-			
-			if(componentLogDirectory != null){
-				
-					this.setProperty("componentLogDirectory", componentLogDirectory.toString());
-				
-			}
-			
-			if(logDirectory != null){
-				
-					this.setProperty("logDirectory", logDirectory.toString());
-				
-			}
-			
-			if(enableLog != null){
-				
-					this.setProperty("enableLog", enableLog.toString());
-				
-			}
-			
-			if(parentId != null){
-				
-					this.setProperty("parentId", parentId.toString());
-				
-			}
-			
-			if(filename != null){
-				
-					this.setProperty("filename", filename.toString());
-				
-			}
-			
-			if(ciamApiSetMasterChild != null){
-				
-					this.setProperty("ciamApiSetMasterChild", ciamApiSetMasterChild.toString());
-				
-			}
-			
-			if(ciamApiGetOptinServicesList != null){
-				
-					this.setProperty("ciamApiGetOptinServicesList", ciamApiGetOptinServicesList.toString());
-				
-			}
-			
-			if(ciamApiTermCondition != null){
-				
-					this.setProperty("ciamApiTermCondition", ciamApiTermCondition.toString());
-				
-			}
-			
-			if(ciamApiGetCountryList != null){
-				
-					this.setProperty("ciamApiGetCountryList", ciamApiGetCountryList.toString());
-				
-			}
-			
-			if(ciamApiSaveOptinService != null){
-				
-					this.setProperty("ciamApiSaveOptinService", ciamApiSaveOptinService.toString());
-				
-			}
-			
-			if(ciamApisuffix != null){
-				
-					this.setProperty("ciamApisuffix", ciamApisuffix.toString());
-				
-			}
-			
-			if(ciamApiPushCustomer != null){
-				
-					this.setProperty("ciamApiPushCustomer", ciamApiPushCustomer.toString());
-				
-			}
-			
-			if(ciamApiBaseUrl != null){
-				
-					this.setProperty("ciamApiBaseUrl", ciamApiBaseUrl.toString());
-				
-			}
-			
-			if(ciamApiGetCustomer != null){
-				
-					this.setProperty("ciamApiGetCustomer", ciamApiGetCustomer.toString());
-				
-			}
-			
-			if(ciamApiSendOtp != null){
-				
-					this.setProperty("ciamApiSendOtp", ciamApiSendOtp.toString());
-				
-			}
-			
-			if(ciamApiRealTime != null){
-				
-					this.setProperty("ciamApiRealTime", ciamApiRealTime.toString());
-				
-			}
-			
-			if(ciamApiRegisterCustomer != null){
-				
-					this.setProperty("ciamApiRegisterCustomer", ciamApiRegisterCustomer.toString());
-				
-			}
-			
-			if(oFacScanApiKey != null){
-				
-					this.setProperty("oFacScanApiKey", oFacScanApiKey.toString());
-				
-			}
-			
-			if(ciamApiVerifyOtp != null){
-				
-					this.setProperty("ciamApiVerifyOtp", ciamApiVerifyOtp.toString());
-				
-			}
-			
-			if(ciamApiSearchCustomer != null){
-				
-					this.setProperty("ciamApiSearchCustomer", ciamApiSearchCustomer.toString());
-				
-			}
-			
-			if(oFacScanUrl != null){
-				
-					this.setProperty("oFacScanUrl", oFacScanUrl.toString());
-				
-			}
-			
-			if(ciamApiLoadGroupADataInCiam != null){
-				
-					this.setProperty("ciamApiLoadGroupADataInCiam", ciamApiLoadGroupADataInCiam.toString());
-				
-			}
-			
-			if(ciamApiKey != null){
-				
-					this.setProperty("ciamApiKey", ciamApiKey.toString());
-				
-			}
-			
-			if(ciamApiGetCityById != null){
-				
-					this.setProperty("ciamApiGetCityById", ciamApiGetCityById.toString());
-				
-			}
-			
-			if(ciamApiGetStateListByCountry != null){
-				
-					this.setProperty("ciamApiGetStateListByCountry", ciamApiGetStateListByCountry.toString());
-				
-			}
-			
-			if(ciamApiUploadSignature != null){
-				
-					this.setProperty("ciamApiUploadSignature", ciamApiUploadSignature.toString());
-				
-			}
-			
-			if(ciamApiLoginCustomer != null){
-				
-					this.setProperty("ciamApiLoginCustomer", ciamApiLoginCustomer.toString());
-				
-			}
-			
-			if(ciamApiGetStateById != null){
-				
-					this.setProperty("ciamApiGetStateById", ciamApiGetStateById.toString());
-				
-			}
-			
-			if(ciamApiGetIssuer != null){
-				
-					this.setProperty("ciamApiGetIssuer", ciamApiGetIssuer.toString());
-				
-			}
-			
-			if(ciamApiGetCityListByState != null){
-				
-					this.setProperty("ciamApiGetCityListByState", ciamApiGetCityListByState.toString());
-				
-			}
-			
-			if(ciamApiGetCountryById != null){
-				
-					this.setProperty("ciamApiGetCountryById", ciamApiGetCountryById.toString());
-				
-			}
-			
-			if(ciamApiUploadAssets != null){
-				
-					this.setProperty("ciamApiUploadAssets", ciamApiUploadAssets.toString());
-				
-			}
-			
-			if(talendBaseUrl != null){
-				
-					this.setProperty("talendBaseUrl", talendBaseUrl.toString());
-				
-			}
-			
-			if(dataDirectory != null){
-				
-					this.setProperty("dataDirectory", dataDirectory.toString());
-				
-			}
-			
-			if(ciamApiUpdateCollection != null){
-				
-					this.setProperty("ciamApiUpdateCollection", ciamApiUpdateCollection.toString());
-				
-			}
-			
-			if(ciamApiGetDocument != null){
-				
-					this.setProperty("ciamApiGetDocument", ciamApiGetDocument.toString());
-				
-			}
-			
-			if(ciamApiRegisterIssuer != null){
-				
-					this.setProperty("ciamApiRegisterIssuer", ciamApiRegisterIssuer.toString());
-				
-			}
-			
-			if(ciamApiSearchCustomerOnCiam != null){
-				
-					this.setProperty("ciamApiSearchCustomerOnCiam", ciamApiSearchCustomerOnCiam.toString());
-				
-			}
-			
-			if(jobName != null){
-				
-					this.setProperty("jobName", jobName.toString());
-				
-			}
-			
-			if(reason != null){
-				
-					this.setProperty("reason", reason.toString());
-				
-			}
-			
-			if(dataJson != null){
-				
-					this.setProperty("dataJson", dataJson.toString());
-				
-			}
-			
-			if(dataSource != null){
-				
-					this.setProperty("dataSource", dataSource.toString());
-				
-			}
-			
-			if(dataSourceType != null){
-				
-					this.setProperty("dataSourceType", dataSourceType.toString());
-				
-			}
-			
-			if(inValidRequestJsonError != null){
-				
-					this.setProperty("inValidRequestJsonError", inValidRequestJsonError.toString());
-				
-			}
-			
-			if(inValidResponseJsonError != null){
-				
-					this.setProperty("inValidResponseJsonError", inValidResponseJsonError.toString());
-				
-			}
-			
-			if(ciamServerError != null){
-				
-					this.setProperty("ciamServerError", ciamServerError.toString());
-				
-			}
-			
-			if(failureStatus != null){
-				
-					this.setProperty("failureStatus", failureStatus.toString());
-				
-			}
-			
-			if(successStatus != null){
-				
-					this.setProperty("successStatus", successStatus.toString());
-				
-			}
-			
 		}
 
 public String mysql_host;
@@ -503,6 +233,22 @@ public String mysql_port;
 public String getMysql_port(){
 	return this.mysql_port;
 }
+public String generalLogDirectory;
+public String getGeneralLogDirectory(){
+	return this.generalLogDirectory;
+}
+public String componentLogDirectory;
+public String getComponentLogDirectory(){
+	return this.componentLogDirectory;
+}
+public String logDirectory;
+public String getLogDirectory(){
+	return this.logDirectory;
+}
+public String dataDirectory;
+public String getDataDirectory(){
+	return this.dataDirectory;
+}
 public String groupAScholarshipFile2;
 public String getGroupAScholarshipFile2(){
 	return this.groupAScholarshipFile2;
@@ -522,202 +268,6 @@ public String getGroupAScholarshipCombinedFile(){
 public String groupAFilesDirectory;
 public String getGroupAFilesDirectory(){
 	return this.groupAFilesDirectory;
-}
-public String generalLogDirectory;
-public String getGeneralLogDirectory(){
-	return this.generalLogDirectory;
-}
-public String componentLogDirectory;
-public String getComponentLogDirectory(){
-	return this.componentLogDirectory;
-}
-public String logDirectory;
-public String getLogDirectory(){
-	return this.logDirectory;
-}
-public String enableLog;
-public String getEnableLog(){
-	return this.enableLog;
-}
-public Integer parentId;
-public Integer getParentId(){
-	return this.parentId;
-}
-public String filename;
-public String getFilename(){
-	return this.filename;
-}
-public String ciamApiSetMasterChild;
-public String getCiamApiSetMasterChild(){
-	return this.ciamApiSetMasterChild;
-}
-public String ciamApiGetOptinServicesList;
-public String getCiamApiGetOptinServicesList(){
-	return this.ciamApiGetOptinServicesList;
-}
-public String ciamApiTermCondition;
-public String getCiamApiTermCondition(){
-	return this.ciamApiTermCondition;
-}
-public String ciamApiGetCountryList;
-public String getCiamApiGetCountryList(){
-	return this.ciamApiGetCountryList;
-}
-public String ciamApiSaveOptinService;
-public String getCiamApiSaveOptinService(){
-	return this.ciamApiSaveOptinService;
-}
-public String ciamApisuffix;
-public String getCiamApisuffix(){
-	return this.ciamApisuffix;
-}
-public String ciamApiPushCustomer;
-public String getCiamApiPushCustomer(){
-	return this.ciamApiPushCustomer;
-}
-public String ciamApiBaseUrl;
-public String getCiamApiBaseUrl(){
-	return this.ciamApiBaseUrl;
-}
-public String ciamApiGetCustomer;
-public String getCiamApiGetCustomer(){
-	return this.ciamApiGetCustomer;
-}
-public String ciamApiSendOtp;
-public String getCiamApiSendOtp(){
-	return this.ciamApiSendOtp;
-}
-public String ciamApiRealTime;
-public String getCiamApiRealTime(){
-	return this.ciamApiRealTime;
-}
-public String ciamApiRegisterCustomer;
-public String getCiamApiRegisterCustomer(){
-	return this.ciamApiRegisterCustomer;
-}
-public String oFacScanApiKey;
-public String getOFacScanApiKey(){
-	return this.oFacScanApiKey;
-}
-public String ciamApiVerifyOtp;
-public String getCiamApiVerifyOtp(){
-	return this.ciamApiVerifyOtp;
-}
-public String ciamApiSearchCustomer;
-public String getCiamApiSearchCustomer(){
-	return this.ciamApiSearchCustomer;
-}
-public String oFacScanUrl;
-public String getOFacScanUrl(){
-	return this.oFacScanUrl;
-}
-public String ciamApiLoadGroupADataInCiam;
-public String getCiamApiLoadGroupADataInCiam(){
-	return this.ciamApiLoadGroupADataInCiam;
-}
-public String ciamApiKey;
-public String getCiamApiKey(){
-	return this.ciamApiKey;
-}
-public String ciamApiGetCityById;
-public String getCiamApiGetCityById(){
-	return this.ciamApiGetCityById;
-}
-public String ciamApiGetStateListByCountry;
-public String getCiamApiGetStateListByCountry(){
-	return this.ciamApiGetStateListByCountry;
-}
-public String ciamApiUploadSignature;
-public String getCiamApiUploadSignature(){
-	return this.ciamApiUploadSignature;
-}
-public String ciamApiLoginCustomer;
-public String getCiamApiLoginCustomer(){
-	return this.ciamApiLoginCustomer;
-}
-public String ciamApiGetStateById;
-public String getCiamApiGetStateById(){
-	return this.ciamApiGetStateById;
-}
-public String ciamApiGetIssuer;
-public String getCiamApiGetIssuer(){
-	return this.ciamApiGetIssuer;
-}
-public String ciamApiGetCityListByState;
-public String getCiamApiGetCityListByState(){
-	return this.ciamApiGetCityListByState;
-}
-public String ciamApiGetCountryById;
-public String getCiamApiGetCountryById(){
-	return this.ciamApiGetCountryById;
-}
-public String ciamApiUploadAssets;
-public String getCiamApiUploadAssets(){
-	return this.ciamApiUploadAssets;
-}
-public String talendBaseUrl;
-public String getTalendBaseUrl(){
-	return this.talendBaseUrl;
-}
-public String dataDirectory;
-public String getDataDirectory(){
-	return this.dataDirectory;
-}
-public String ciamApiUpdateCollection;
-public String getCiamApiUpdateCollection(){
-	return this.ciamApiUpdateCollection;
-}
-public String ciamApiGetDocument;
-public String getCiamApiGetDocument(){
-	return this.ciamApiGetDocument;
-}
-public String ciamApiRegisterIssuer;
-public String getCiamApiRegisterIssuer(){
-	return this.ciamApiRegisterIssuer;
-}
-public String ciamApiSearchCustomerOnCiam;
-public String getCiamApiSearchCustomerOnCiam(){
-	return this.ciamApiSearchCustomerOnCiam;
-}
-public String jobName;
-public String getJobName(){
-	return this.jobName;
-}
-public String reason;
-public String getReason(){
-	return this.reason;
-}
-public String dataJson;
-public String getDataJson(){
-	return this.dataJson;
-}
-public String dataSource;
-public String getDataSource(){
-	return this.dataSource;
-}
-public String dataSourceType;
-public String getDataSourceType(){
-	return this.dataSourceType;
-}
-public String inValidRequestJsonError;
-public String getInValidRequestJsonError(){
-	return this.inValidRequestJsonError;
-}
-public String inValidResponseJsonError;
-public String getInValidResponseJsonError(){
-	return this.inValidResponseJsonError;
-}
-public String ciamServerError;
-public String getCiamServerError(){
-	return this.ciamServerError;
-}
-public Boolean failureStatus;
-public Boolean getFailureStatus(){
-	return this.failureStatus;
-}
-public Boolean successStatus;
-public Boolean getSuccessStatus(){
-	return this.successStatus;
 }
 	}
 	private ContextProperties context = new ContextProperties();
@@ -1703,6 +1253,26 @@ if(row_Implicit_Context_Regex != null) {
            context.mysql_port=value_Implicit_Context_Context;
         }
 
+        if(key_Implicit_Context_Context!=null && "generalLogDirectory".equals(key_Implicit_Context_Context))
+        {
+           context.generalLogDirectory=value_Implicit_Context_Context;
+        }
+
+        if(key_Implicit_Context_Context!=null && "componentLogDirectory".equals(key_Implicit_Context_Context))
+        {
+           context.componentLogDirectory=value_Implicit_Context_Context;
+        }
+
+        if(key_Implicit_Context_Context!=null && "logDirectory".equals(key_Implicit_Context_Context))
+        {
+           context.logDirectory=value_Implicit_Context_Context;
+        }
+
+        if(key_Implicit_Context_Context!=null && "dataDirectory".equals(key_Implicit_Context_Context))
+        {
+           context.dataDirectory=value_Implicit_Context_Context;
+        }
+
         if(key_Implicit_Context_Context!=null && "groupAScholarshipFile2".equals(key_Implicit_Context_Context))
         {
            context.groupAScholarshipFile2=value_Implicit_Context_Context;
@@ -1726,257 +1296,6 @@ if(row_Implicit_Context_Regex != null) {
         if(key_Implicit_Context_Context!=null && "groupAFilesDirectory".equals(key_Implicit_Context_Context))
         {
            context.groupAFilesDirectory=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "generalLogDirectory".equals(key_Implicit_Context_Context))
-        {
-           context.generalLogDirectory=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "componentLogDirectory".equals(key_Implicit_Context_Context))
-        {
-           context.componentLogDirectory=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "logDirectory".equals(key_Implicit_Context_Context))
-        {
-           context.logDirectory=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "enableLog".equals(key_Implicit_Context_Context))
-        {
-           context.enableLog=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "parentId".equals(key_Implicit_Context_Context))
-        {
-
-                context.parentId=Integer.parseInt(value_Implicit_Context_Context);
-
-        }
-
-        if(key_Implicit_Context_Context!=null && "filename".equals(key_Implicit_Context_Context))
-        {
-           context.filename=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiSetMasterChild".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiSetMasterChild=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiGetOptinServicesList".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiGetOptinServicesList=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiTermCondition".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiTermCondition=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiGetCountryList".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiGetCountryList=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiSaveOptinService".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiSaveOptinService=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApisuffix".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApisuffix=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiPushCustomer".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiPushCustomer=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiBaseUrl".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiBaseUrl=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiGetCustomer".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiGetCustomer=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiSendOtp".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiSendOtp=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiRealTime".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiRealTime=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiRegisterCustomer".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiRegisterCustomer=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "oFacScanApiKey".equals(key_Implicit_Context_Context))
-        {
-           context.oFacScanApiKey=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiVerifyOtp".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiVerifyOtp=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiSearchCustomer".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiSearchCustomer=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "oFacScanUrl".equals(key_Implicit_Context_Context))
-        {
-           context.oFacScanUrl=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiLoadGroupADataInCiam".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiLoadGroupADataInCiam=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiKey".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiKey=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiGetCityById".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiGetCityById=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiGetStateListByCountry".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiGetStateListByCountry=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiUploadSignature".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiUploadSignature=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiLoginCustomer".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiLoginCustomer=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiGetStateById".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiGetStateById=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiGetIssuer".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiGetIssuer=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiGetCityListByState".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiGetCityListByState=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiGetCountryById".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiGetCountryById=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiUploadAssets".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiUploadAssets=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "talendBaseUrl".equals(key_Implicit_Context_Context))
-        {
-           context.talendBaseUrl=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "dataDirectory".equals(key_Implicit_Context_Context))
-        {
-           context.dataDirectory=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiUpdateCollection".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiUpdateCollection=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiGetDocument".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiGetDocument=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiRegisterIssuer".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiRegisterIssuer=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamApiSearchCustomerOnCiam".equals(key_Implicit_Context_Context))
-        {
-           context.ciamApiSearchCustomerOnCiam=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "jobName".equals(key_Implicit_Context_Context))
-        {
-           context.jobName=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "reason".equals(key_Implicit_Context_Context))
-        {
-           context.reason=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "dataJson".equals(key_Implicit_Context_Context))
-        {
-           context.dataJson=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "dataSource".equals(key_Implicit_Context_Context))
-        {
-           context.dataSource=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "dataSourceType".equals(key_Implicit_Context_Context))
-        {
-           context.dataSourceType=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "inValidRequestJsonError".equals(key_Implicit_Context_Context))
-        {
-           context.inValidRequestJsonError=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "inValidResponseJsonError".equals(key_Implicit_Context_Context))
-        {
-           context.inValidResponseJsonError=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "ciamServerError".equals(key_Implicit_Context_Context))
-        {
-           context.ciamServerError=value_Implicit_Context_Context;
-        }
-
-        if(key_Implicit_Context_Context!=null && "failureStatus".equals(key_Implicit_Context_Context))
-        {
-
-               context.failureStatus=Boolean.parseBoolean(value_Implicit_Context_Context);
-
-        }
-
-        if(key_Implicit_Context_Context!=null && "successStatus".equals(key_Implicit_Context_Context))
-        {
-
-               context.successStatus=Boolean.parseBoolean(value_Implicit_Context_Context);
-
         }
 
 
@@ -4412,7 +3731,7 @@ public void tDBConnection_1Process(final java.util.Map<String, Object> globalMap
 			properties_tDBConnection_1 += "&rewriteBatchedStatements=true";
 		}
 		
-		String url_tDBConnection_1 = "jdbc:mysql://" + context.mysql_host + ":" + "3306" + "/" + context.mysql_database + "?" + properties_tDBConnection_1;
+		String url_tDBConnection_1 = "jdbc:mysql://" + context.mysql_host + ":" + context.mysql_port + "/" + context.mysql_database + "?" + properties_tDBConnection_1;
 
 	String dbUser_tDBConnection_1 = context.mysql_user;
 	
@@ -12717,6 +12036,10 @@ if(scholarship != null) {
 	
 	java.util.Map<String, Object> parentContextMap_tRunJob_3 = new java.util.HashMap<String, Object>();
 
+	 
+	java.util.List<String> paraListForLog_tRunJob_3 = new java.util.ArrayList<String>();
+	paraListForLog_tRunJob_3.addAll(paraList_tRunJob_3);
+	List<String> parametersToEncrypt_tRunJob_3 = new java.util.ArrayList<String>();
 	
 
 	Object obj_tRunJob_3 = null;
@@ -12729,6 +12052,12 @@ if(scholarship != null) {
 			paraList_tRunJob_3.add("--context_param filename=" + NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
 		}
 		
+		if(parametersToEncrypt_tRunJob_3 .contains("filename") && obj_tRunJob_3 != null) {
+			paraListForLog_tRunJob_3.add("--context_param filename=" + routines.system.PasswordEncryptUtil.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3))));
+		} else {
+			paraListForLog_tRunJob_3.add("--context_param filename=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+		}
+		
 		parentContextMap_tRunJob_3.put("filename", obj_tRunJob_3);
 	
 		obj_tRunJob_3 = (Integer) globalMap.get("parentId");
@@ -12738,8 +12067,16 @@ if(scholarship != null) {
 			paraList_tRunJob_3.add("--context_param parentId=" + NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
 		}
 		
+		if(parametersToEncrypt_tRunJob_3 .contains("parentId") && obj_tRunJob_3 != null) {
+			paraListForLog_tRunJob_3.add("--context_param parentId=" + routines.system.PasswordEncryptUtil.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3))));
+		} else {
+			paraListForLog_tRunJob_3.add("--context_param parentId=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+		}
+		
 		parentContextMap_tRunJob_3.put("parentId", obj_tRunJob_3);
 	
+	
+		System.out.println("tRunJob_3 in LoadGroupADataFromFiles call pdp_10dec2018.loadscholarshipdata_0_1.LoadScholarshipData with:\n\n" + paraListForLog_tRunJob_3 + "\n");
 	
 		pdp_10dec2018.loadscholarshipdata_0_1.LoadScholarshipData childJob_tRunJob_3 = new pdp_10dec2018.loadscholarshipdata_0_1.LoadScholarshipData();
 	    // pass DataSources
@@ -13357,6 +12694,18 @@ end_Hash.put("tRunJob_3", System.currentTimeMillis());
 				    context.setContextType("mysql_port", "id_String");
 				
                 context.mysql_port=(String) context.getProperty("mysql_port");
+				    context.setContextType("generalLogDirectory", "id_String");
+				
+                context.generalLogDirectory=(String) context.getProperty("generalLogDirectory");
+				    context.setContextType("componentLogDirectory", "id_String");
+				
+                context.componentLogDirectory=(String) context.getProperty("componentLogDirectory");
+				    context.setContextType("logDirectory", "id_String");
+				
+                context.logDirectory=(String) context.getProperty("logDirectory");
+				    context.setContextType("dataDirectory", "id_String");
+				
+                context.dataDirectory=(String) context.getProperty("dataDirectory");
 				    context.setContextType("groupAScholarshipFile2", "id_String");
 				
                 context.groupAScholarshipFile2=(String) context.getProperty("groupAScholarshipFile2");
@@ -13372,165 +12721,6 @@ end_Hash.put("tRunJob_3", System.currentTimeMillis());
 				    context.setContextType("groupAFilesDirectory", "id_String");
 				
                 context.groupAFilesDirectory=(String) context.getProperty("groupAFilesDirectory");
-				    context.setContextType("generalLogDirectory", "id_String");
-				
-                context.generalLogDirectory=(String) context.getProperty("generalLogDirectory");
-				    context.setContextType("componentLogDirectory", "id_String");
-				
-                context.componentLogDirectory=(String) context.getProperty("componentLogDirectory");
-				    context.setContextType("logDirectory", "id_String");
-				
-                context.logDirectory=(String) context.getProperty("logDirectory");
-				    context.setContextType("enableLog", "id_String");
-				
-                context.enableLog=(String) context.getProperty("enableLog");
-				    context.setContextType("parentId", "id_Integer");
-				
-             try{
-                 context.parentId=routines.system.ParserUtils.parseTo_Integer (context.getProperty("parentId"));
-             }catch(NumberFormatException e){
-                 context.parentId=null;
-              }
-				    context.setContextType("filename", "id_String");
-				
-                context.filename=(String) context.getProperty("filename");
-				    context.setContextType("ciamApiSetMasterChild", "id_String");
-				
-                context.ciamApiSetMasterChild=(String) context.getProperty("ciamApiSetMasterChild");
-				    context.setContextType("ciamApiGetOptinServicesList", "id_String");
-				
-                context.ciamApiGetOptinServicesList=(String) context.getProperty("ciamApiGetOptinServicesList");
-				    context.setContextType("ciamApiTermCondition", "id_String");
-				
-                context.ciamApiTermCondition=(String) context.getProperty("ciamApiTermCondition");
-				    context.setContextType("ciamApiGetCountryList", "id_String");
-				
-                context.ciamApiGetCountryList=(String) context.getProperty("ciamApiGetCountryList");
-				    context.setContextType("ciamApiSaveOptinService", "id_String");
-				
-                context.ciamApiSaveOptinService=(String) context.getProperty("ciamApiSaveOptinService");
-				    context.setContextType("ciamApisuffix", "id_String");
-				
-                context.ciamApisuffix=(String) context.getProperty("ciamApisuffix");
-				    context.setContextType("ciamApiPushCustomer", "id_String");
-				
-                context.ciamApiPushCustomer=(String) context.getProperty("ciamApiPushCustomer");
-				    context.setContextType("ciamApiBaseUrl", "id_String");
-				
-                context.ciamApiBaseUrl=(String) context.getProperty("ciamApiBaseUrl");
-				    context.setContextType("ciamApiGetCustomer", "id_String");
-				
-                context.ciamApiGetCustomer=(String) context.getProperty("ciamApiGetCustomer");
-				    context.setContextType("ciamApiSendOtp", "id_String");
-				
-                context.ciamApiSendOtp=(String) context.getProperty("ciamApiSendOtp");
-				    context.setContextType("ciamApiRealTime", "id_String");
-				
-                context.ciamApiRealTime=(String) context.getProperty("ciamApiRealTime");
-				    context.setContextType("ciamApiRegisterCustomer", "id_String");
-				
-                context.ciamApiRegisterCustomer=(String) context.getProperty("ciamApiRegisterCustomer");
-				    context.setContextType("oFacScanApiKey", "id_String");
-				
-                context.oFacScanApiKey=(String) context.getProperty("oFacScanApiKey");
-				    context.setContextType("ciamApiVerifyOtp", "id_String");
-				
-                context.ciamApiVerifyOtp=(String) context.getProperty("ciamApiVerifyOtp");
-				    context.setContextType("ciamApiSearchCustomer", "id_String");
-				
-                context.ciamApiSearchCustomer=(String) context.getProperty("ciamApiSearchCustomer");
-				    context.setContextType("oFacScanUrl", "id_String");
-				
-                context.oFacScanUrl=(String) context.getProperty("oFacScanUrl");
-				    context.setContextType("ciamApiLoadGroupADataInCiam", "id_String");
-				
-                context.ciamApiLoadGroupADataInCiam=(String) context.getProperty("ciamApiLoadGroupADataInCiam");
-				    context.setContextType("ciamApiKey", "id_String");
-				
-                context.ciamApiKey=(String) context.getProperty("ciamApiKey");
-				    context.setContextType("ciamApiGetCityById", "id_String");
-				
-                context.ciamApiGetCityById=(String) context.getProperty("ciamApiGetCityById");
-				    context.setContextType("ciamApiGetStateListByCountry", "id_String");
-				
-                context.ciamApiGetStateListByCountry=(String) context.getProperty("ciamApiGetStateListByCountry");
-				    context.setContextType("ciamApiUploadSignature", "id_String");
-				
-                context.ciamApiUploadSignature=(String) context.getProperty("ciamApiUploadSignature");
-				    context.setContextType("ciamApiLoginCustomer", "id_String");
-				
-                context.ciamApiLoginCustomer=(String) context.getProperty("ciamApiLoginCustomer");
-				    context.setContextType("ciamApiGetStateById", "id_String");
-				
-                context.ciamApiGetStateById=(String) context.getProperty("ciamApiGetStateById");
-				    context.setContextType("ciamApiGetIssuer", "id_String");
-				
-                context.ciamApiGetIssuer=(String) context.getProperty("ciamApiGetIssuer");
-				    context.setContextType("ciamApiGetCityListByState", "id_String");
-				
-                context.ciamApiGetCityListByState=(String) context.getProperty("ciamApiGetCityListByState");
-				    context.setContextType("ciamApiGetCountryById", "id_String");
-				
-                context.ciamApiGetCountryById=(String) context.getProperty("ciamApiGetCountryById");
-				    context.setContextType("ciamApiUploadAssets", "id_String");
-				
-                context.ciamApiUploadAssets=(String) context.getProperty("ciamApiUploadAssets");
-				    context.setContextType("talendBaseUrl", "id_String");
-				
-                context.talendBaseUrl=(String) context.getProperty("talendBaseUrl");
-				    context.setContextType("dataDirectory", "id_String");
-				
-                context.dataDirectory=(String) context.getProperty("dataDirectory");
-				    context.setContextType("ciamApiUpdateCollection", "id_String");
-				
-                context.ciamApiUpdateCollection=(String) context.getProperty("ciamApiUpdateCollection");
-				    context.setContextType("ciamApiGetDocument", "id_String");
-				
-                context.ciamApiGetDocument=(String) context.getProperty("ciamApiGetDocument");
-				    context.setContextType("ciamApiRegisterIssuer", "id_String");
-				
-                context.ciamApiRegisterIssuer=(String) context.getProperty("ciamApiRegisterIssuer");
-				    context.setContextType("ciamApiSearchCustomerOnCiam", "id_String");
-				
-                context.ciamApiSearchCustomerOnCiam=(String) context.getProperty("ciamApiSearchCustomerOnCiam");
-				    context.setContextType("jobName", "id_String");
-				
-                context.jobName=(String) context.getProperty("jobName");
-				    context.setContextType("reason", "id_String");
-				
-                context.reason=(String) context.getProperty("reason");
-				    context.setContextType("dataJson", "id_String");
-				
-                context.dataJson=(String) context.getProperty("dataJson");
-				    context.setContextType("dataSource", "id_String");
-				
-                context.dataSource=(String) context.getProperty("dataSource");
-				    context.setContextType("dataSourceType", "id_String");
-				
-                context.dataSourceType=(String) context.getProperty("dataSourceType");
-				    context.setContextType("inValidRequestJsonError", "id_String");
-				
-                context.inValidRequestJsonError=(String) context.getProperty("inValidRequestJsonError");
-				    context.setContextType("inValidResponseJsonError", "id_String");
-				
-                context.inValidResponseJsonError=(String) context.getProperty("inValidResponseJsonError");
-				    context.setContextType("ciamServerError", "id_String");
-				
-                context.ciamServerError=(String) context.getProperty("ciamServerError");
-				    context.setContextType("failureStatus", "id_Boolean");
-				
-             try{
-                 context.failureStatus=routines.system.ParserUtils.parseTo_Boolean (context.getProperty("failureStatus"));
-             }catch(NumberFormatException e){
-                 context.failureStatus=null;
-              }
-				    context.setContextType("successStatus", "id_Boolean");
-				
-             try{
-                 context.successStatus=routines.system.ParserUtils.parseTo_Boolean (context.getProperty("successStatus"));
-             }catch(NumberFormatException e){
-                 context.successStatus=null;
-              }
         } catch (java.io.IOException ie) {
             System.err.println("Could not load context "+contextStr);
             ie.printStackTrace();
@@ -13548,6 +12738,14 @@ end_Hash.put("tRunJob_3", System.currentTimeMillis());
                 context.mysql_database = (String) parentContextMap.get("mysql_database");
             }if (parentContextMap.containsKey("mysql_port")) {
                 context.mysql_port = (String) parentContextMap.get("mysql_port");
+            }if (parentContextMap.containsKey("generalLogDirectory")) {
+                context.generalLogDirectory = (String) parentContextMap.get("generalLogDirectory");
+            }if (parentContextMap.containsKey("componentLogDirectory")) {
+                context.componentLogDirectory = (String) parentContextMap.get("componentLogDirectory");
+            }if (parentContextMap.containsKey("logDirectory")) {
+                context.logDirectory = (String) parentContextMap.get("logDirectory");
+            }if (parentContextMap.containsKey("dataDirectory")) {
+                context.dataDirectory = (String) parentContextMap.get("dataDirectory");
             }if (parentContextMap.containsKey("groupAScholarshipFile2")) {
                 context.groupAScholarshipFile2 = (String) parentContextMap.get("groupAScholarshipFile2");
             }if (parentContextMap.containsKey("groupAFilesProcessingOrder")) {
@@ -13558,104 +12756,6 @@ end_Hash.put("tRunJob_3", System.currentTimeMillis());
                 context.groupAScholarshipCombinedFile = (String) parentContextMap.get("groupAScholarshipCombinedFile");
             }if (parentContextMap.containsKey("groupAFilesDirectory")) {
                 context.groupAFilesDirectory = (String) parentContextMap.get("groupAFilesDirectory");
-            }if (parentContextMap.containsKey("generalLogDirectory")) {
-                context.generalLogDirectory = (String) parentContextMap.get("generalLogDirectory");
-            }if (parentContextMap.containsKey("componentLogDirectory")) {
-                context.componentLogDirectory = (String) parentContextMap.get("componentLogDirectory");
-            }if (parentContextMap.containsKey("logDirectory")) {
-                context.logDirectory = (String) parentContextMap.get("logDirectory");
-            }if (parentContextMap.containsKey("enableLog")) {
-                context.enableLog = (String) parentContextMap.get("enableLog");
-            }if (parentContextMap.containsKey("parentId")) {
-                context.parentId = (Integer) parentContextMap.get("parentId");
-            }if (parentContextMap.containsKey("filename")) {
-                context.filename = (String) parentContextMap.get("filename");
-            }if (parentContextMap.containsKey("ciamApiSetMasterChild")) {
-                context.ciamApiSetMasterChild = (String) parentContextMap.get("ciamApiSetMasterChild");
-            }if (parentContextMap.containsKey("ciamApiGetOptinServicesList")) {
-                context.ciamApiGetOptinServicesList = (String) parentContextMap.get("ciamApiGetOptinServicesList");
-            }if (parentContextMap.containsKey("ciamApiTermCondition")) {
-                context.ciamApiTermCondition = (String) parentContextMap.get("ciamApiTermCondition");
-            }if (parentContextMap.containsKey("ciamApiGetCountryList")) {
-                context.ciamApiGetCountryList = (String) parentContextMap.get("ciamApiGetCountryList");
-            }if (parentContextMap.containsKey("ciamApiSaveOptinService")) {
-                context.ciamApiSaveOptinService = (String) parentContextMap.get("ciamApiSaveOptinService");
-            }if (parentContextMap.containsKey("ciamApisuffix")) {
-                context.ciamApisuffix = (String) parentContextMap.get("ciamApisuffix");
-            }if (parentContextMap.containsKey("ciamApiPushCustomer")) {
-                context.ciamApiPushCustomer = (String) parentContextMap.get("ciamApiPushCustomer");
-            }if (parentContextMap.containsKey("ciamApiBaseUrl")) {
-                context.ciamApiBaseUrl = (String) parentContextMap.get("ciamApiBaseUrl");
-            }if (parentContextMap.containsKey("ciamApiGetCustomer")) {
-                context.ciamApiGetCustomer = (String) parentContextMap.get("ciamApiGetCustomer");
-            }if (parentContextMap.containsKey("ciamApiSendOtp")) {
-                context.ciamApiSendOtp = (String) parentContextMap.get("ciamApiSendOtp");
-            }if (parentContextMap.containsKey("ciamApiRealTime")) {
-                context.ciamApiRealTime = (String) parentContextMap.get("ciamApiRealTime");
-            }if (parentContextMap.containsKey("ciamApiRegisterCustomer")) {
-                context.ciamApiRegisterCustomer = (String) parentContextMap.get("ciamApiRegisterCustomer");
-            }if (parentContextMap.containsKey("oFacScanApiKey")) {
-                context.oFacScanApiKey = (String) parentContextMap.get("oFacScanApiKey");
-            }if (parentContextMap.containsKey("ciamApiVerifyOtp")) {
-                context.ciamApiVerifyOtp = (String) parentContextMap.get("ciamApiVerifyOtp");
-            }if (parentContextMap.containsKey("ciamApiSearchCustomer")) {
-                context.ciamApiSearchCustomer = (String) parentContextMap.get("ciamApiSearchCustomer");
-            }if (parentContextMap.containsKey("oFacScanUrl")) {
-                context.oFacScanUrl = (String) parentContextMap.get("oFacScanUrl");
-            }if (parentContextMap.containsKey("ciamApiLoadGroupADataInCiam")) {
-                context.ciamApiLoadGroupADataInCiam = (String) parentContextMap.get("ciamApiLoadGroupADataInCiam");
-            }if (parentContextMap.containsKey("ciamApiKey")) {
-                context.ciamApiKey = (String) parentContextMap.get("ciamApiKey");
-            }if (parentContextMap.containsKey("ciamApiGetCityById")) {
-                context.ciamApiGetCityById = (String) parentContextMap.get("ciamApiGetCityById");
-            }if (parentContextMap.containsKey("ciamApiGetStateListByCountry")) {
-                context.ciamApiGetStateListByCountry = (String) parentContextMap.get("ciamApiGetStateListByCountry");
-            }if (parentContextMap.containsKey("ciamApiUploadSignature")) {
-                context.ciamApiUploadSignature = (String) parentContextMap.get("ciamApiUploadSignature");
-            }if (parentContextMap.containsKey("ciamApiLoginCustomer")) {
-                context.ciamApiLoginCustomer = (String) parentContextMap.get("ciamApiLoginCustomer");
-            }if (parentContextMap.containsKey("ciamApiGetStateById")) {
-                context.ciamApiGetStateById = (String) parentContextMap.get("ciamApiGetStateById");
-            }if (parentContextMap.containsKey("ciamApiGetIssuer")) {
-                context.ciamApiGetIssuer = (String) parentContextMap.get("ciamApiGetIssuer");
-            }if (parentContextMap.containsKey("ciamApiGetCityListByState")) {
-                context.ciamApiGetCityListByState = (String) parentContextMap.get("ciamApiGetCityListByState");
-            }if (parentContextMap.containsKey("ciamApiGetCountryById")) {
-                context.ciamApiGetCountryById = (String) parentContextMap.get("ciamApiGetCountryById");
-            }if (parentContextMap.containsKey("ciamApiUploadAssets")) {
-                context.ciamApiUploadAssets = (String) parentContextMap.get("ciamApiUploadAssets");
-            }if (parentContextMap.containsKey("talendBaseUrl")) {
-                context.talendBaseUrl = (String) parentContextMap.get("talendBaseUrl");
-            }if (parentContextMap.containsKey("dataDirectory")) {
-                context.dataDirectory = (String) parentContextMap.get("dataDirectory");
-            }if (parentContextMap.containsKey("ciamApiUpdateCollection")) {
-                context.ciamApiUpdateCollection = (String) parentContextMap.get("ciamApiUpdateCollection");
-            }if (parentContextMap.containsKey("ciamApiGetDocument")) {
-                context.ciamApiGetDocument = (String) parentContextMap.get("ciamApiGetDocument");
-            }if (parentContextMap.containsKey("ciamApiRegisterIssuer")) {
-                context.ciamApiRegisterIssuer = (String) parentContextMap.get("ciamApiRegisterIssuer");
-            }if (parentContextMap.containsKey("ciamApiSearchCustomerOnCiam")) {
-                context.ciamApiSearchCustomerOnCiam = (String) parentContextMap.get("ciamApiSearchCustomerOnCiam");
-            }if (parentContextMap.containsKey("jobName")) {
-                context.jobName = (String) parentContextMap.get("jobName");
-            }if (parentContextMap.containsKey("reason")) {
-                context.reason = (String) parentContextMap.get("reason");
-            }if (parentContextMap.containsKey("dataJson")) {
-                context.dataJson = (String) parentContextMap.get("dataJson");
-            }if (parentContextMap.containsKey("dataSource")) {
-                context.dataSource = (String) parentContextMap.get("dataSource");
-            }if (parentContextMap.containsKey("dataSourceType")) {
-                context.dataSourceType = (String) parentContextMap.get("dataSourceType");
-            }if (parentContextMap.containsKey("inValidRequestJsonError")) {
-                context.inValidRequestJsonError = (String) parentContextMap.get("inValidRequestJsonError");
-            }if (parentContextMap.containsKey("inValidResponseJsonError")) {
-                context.inValidResponseJsonError = (String) parentContextMap.get("inValidResponseJsonError");
-            }if (parentContextMap.containsKey("ciamServerError")) {
-                context.ciamServerError = (String) parentContextMap.get("ciamServerError");
-            }if (parentContextMap.containsKey("failureStatus")) {
-                context.failureStatus = (Boolean) parentContextMap.get("failureStatus");
-            }if (parentContextMap.containsKey("successStatus")) {
-                context.successStatus = (Boolean) parentContextMap.get("successStatus");
             }
         }
 
@@ -13921,6 +13021,6 @@ if (execStat) {
     ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- *     335008 characters generated by Talend Open Studio for ESB 
- *     on the 12 December, 2018 3:50:27 PM IST
+ *     301343 characters generated by Talend Open Studio for ESB 
+ *     on the 14 December, 2018 7:43:54 PM IST
  ************************************************************************************************/
